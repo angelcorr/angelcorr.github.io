@@ -6,96 +6,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="./images/coffeeandlandscape/jeep-willys.jpeg">
   <title>Coffee Road</title>
-  <link rel = "icon" type = "image/png" href = "./images/jeep-willys.jpeg">
 </head>
-
 <body>
 
   <header>
-    <nav>
-      <ul>
-        <li><a href="#caldas">Caldas</a></li>
-        <li><a href="#risaralda">Risaralda</a></li>
-        <li><a href="#quindio">Quindío</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg header-mask bg-image header-background">
+      <div class="mask header-mask">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler custom-navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse custom-navbar" id="navbarExample01">
+            <ul class="navbar-nav mb-2 mb-lg-0 custom-ul">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#">Main</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#caldas">Caldas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quindio">Quindío</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#risaralda">Risaralda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="p-5 text-center">
+          <div class="d-flex justify-content-center align-items-center custom-welcome">
+            <div class="text-white">
+              <h1 class="mb-3">
+                Bienvenidos a la Ruta del Café
+              </h1>
+              <h4 class="mb-3">
+                Conoce los destinos turisticos increíbles que componen esta región colombiana.
+              </h4>
+            </div>
+          </div>
+        </section>
+      </div>
     </nav>
   </header>
+
+  <main>
+    <section id="caldas">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Caldas</h2>
+        </div>
+        <div class="row justify-content-evenly custom-state">
+          <div class="col-12 col-lg-6 align-self-center">
+            <p>
+              Este departamento tiene un encanto único que te hará amarlo en cuanto lo visites.
+              Su capital, Manizales, es considerada como "la Capital del Café". En esta bella
+              ciudad puedes encontrar la hermosa Catedral de Manizales, punto central del 
+              turismo de esta ciudad. Si tienes suerte y el día está despejado podrías apreciar 
+              el imponente Nevado del Ruíz, el cual es considerado el más alto de todos los
+              nevados del Parque Natural Nacional de los Nevados.
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center custom-image">
+          <img src="./images/caldas/caldas-manizales.jpeg">
+        </div>
+      </div>
+    </section>
+
+    <section id="quindio">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Quindío</h2>
+        </div>
+        <div class="row justify-content-evenly custom-state">
+          <div class="col-12 col-lg-6 col-lg-6 align-self-center">
+            <p>
+              Armenia es conocida como un departamento que parece más un pueblo. Es el segundo
+              departamento más pequeño de toda Colombia, pero es el más lindo de todos. Con 
+              pueblos como Salento, Filandia, Quimbaya y Buenavista, aquí puedes encontrar unas
+              vistas maravillosas al "Falso Valle" de Armenia. Atractivos como el Valle de Cocora,
+              Peñas Blancas, Balsaje del Río La Vieja, y parques como Panaca, Parque del Café, 
+              RECUCA y Parque los Arrieros ofrecen diversidad al turista que desee conocer más
+              del café colombiano.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center custom-image">
+            <img src="./images/quindio/quindio-armenia.jpeg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="risaralda">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Risaralda</h2>
+        </div>
+        <div class="row justify-content-evenly custom-state">
+          <div class="col-12 col-lg-6 align-self-center">
+            <p>
+              Conocida como "La Capital del Eje" o "La Perla del Otún", posee muchísimos lugares 
+              de interés. En Pereira puedes encontrar el Jardín Botanico Universidad Tecnológica 
+              de Pereira, el cual es considerado como uno de los más importantes del país. Posee 
+              atractivos turísticos como lo son Santa Rosa de Cabal, en el cual se encuentran los 
+              Termales de Santa Rosa, a su vez el Bioparque Ukumarí y la Laguna del Otún, la cual 
+              se encuentra dentro del Parque Nacional Natural de los Nevados.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center custom-image">
+            <img src="./images/risaralda/risaralda-marsella.jpeg">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center custom-background custom-footer">
+    <div class="container pt-4">
+      <section class="mb-4">
+        <a
+          class="btn btn-link btn-floating btn-lg m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          class="btn btn-link btn-floating btn-lg m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i>
+        </a>
+        <a
+          class="btn btn-link btn-floating btn-lg m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </section>
+    </div>
+    <div class="text-center text-dark p-3 custom-footer-two">
+      <p>
+        © 2021 Copyright: Todos los derechos reservados
+      </p>
+    </div>
+  </footer>
 
   <a href="../">
     <button type="button" class="btn btn-floating fixed-action-btn custom-button">
       <i class="fas fa-home fa-2x custom-icon"></i>
     </button>
   </a>
-
-  <section>
-    <div class="welcome">
-    <h1>¡Bienvenidos a la Ruta del Café!</h1>
-      <h2>
-        Conoce los destinos turisticos increíbles <br> que componen esta región colombiana.
-      </h2>
-    </div>
-  </section>
   
-  <main class="gradient">
-    <section class="caldas" id="caldas">
-      <h2>Caldas</h2>
-      <article class="aboutCurrentCity">
-        <img src="./images/caldas-manizales.jpeg" alt="Manizales City">
-        <p>
-          Este departamento tiene un encanto único que te hará amarlo en cuanto lo visites.
-          Su capital, Manizales, es considerada como "la Capital del Café". En esta bella
-          ciudad puedes encontrar la hermosa Catedral de Manizales, punto central del 
-          turismo de esta ciudad. Si tienes suerte y el día está despejado podrías apreciar 
-          el imponente Nevado del Ruíz, el cual es considerado el más alto de todos los
-          nevados del Parque Natural Nacional de los Nevados.
-        </p>
-      </article>
-    </section>
-  
-    <section class="quindio" id="quindio">
-      <h2>Quindío</h2>
-      <article class="aboutCurrentCity">
-        <p>
-          Armenia es conocida como un departamento que parece más un pueblo. Es el segundo
-          departamento más pequeño de toda Colombia, pero es el más lindo de todos. Con 
-          pueblos como Salento, Filandia, Quimbaya y Buenavista, aquí puedes encontrar unas
-          vistas maravillosas al "Falso Valle" de Armenia. Atractivos como el Valle de Cocora,
-          Peñas Blancas, Balsaje del Río La Vieja, y parques como Panaca, Parque del Café, 
-          RECUCA y Parque los Arrieros ofrecen diversidad al turista que desee conocer más
-          del café colombiano.
-        </p>
-        <img src="./images/quindio-armenia.jpeg" alt="Armenia City">
-      </article>
-    </section>
-  
-    <section class="risaralda" id="risaralda">
-      <h2>Risaralda</h2>
-      <article class="aboutCurrentCity">
-        <img src="./images/risaralda-pereira.jpg" alt="Risaralda City">
-        <p>
-          Conocida como "La Capital del Eje" o "La Perla del Otún", posee muchísimos lugares 
-          de interés. En Pereira puedes encontrar el Jardín Botanico Universidad Tecnológica 
-          de Pereira, el cual es considerado como uno de los más importantes del país. Posee 
-          atractivos turísticos como lo son Santa Rosa de Cabal, en el cual se encuentran los 
-          Termales de Santa Rosa, a su vez el Bioparque Ukumarí y la Laguna del Otún, la cual 
-          se encuentra dentro del Parque Nacional Natural de los Nevados. 
-        </p>
-      </article>
-    </section>
-  </main>
 
-  <footer>
-    <div class="container" id="contact">
-      <a href="mailto:angelesemilianaa@gmail.com" id="email">Correo de contacto</a>
-      <a href="tel:+(57)3125270045" id="phoneNumber">+(57)3125270045</a>
-      <p>Copyright 2021 - Todos los derechos reservados</p>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 </body>
 </html>

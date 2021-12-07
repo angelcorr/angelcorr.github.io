@@ -1,136 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url(
+  'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap'
+);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 
-* {
-  margin: 0;
-}
-
-header {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(255, 255, 255, 0.1);
-}
-
-li {
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-li a {
-  color: #237734;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 15px;
-  transition: font-size .2s linear, color .2s linear;
-}
-
-li a:hover {
-  font-size: 20px;
-  color: #C41D00;
-}
-
-.welcome {
+.header-background {
+  background-image: url('./images/coffeeandlandscape/coffee-plant.jpeg');
   height: 100vh;
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: 35px;
+}
+
+.header-mask {
+  background-color: rgba(24, 82, 36, 0.404);
+}
+
+.custom-navbar {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.custom-ul {
+  width: 60%;
+  padding-left: unset;
+  justify-content: space-evenly;
+}
+
+.custom-navbar-toggler {
   color: #791503;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.664), 
-    rgba(255, 255, 255, 0.658)
-    ), url("./images/coffee-plant.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; 
 }
 
-.gradient {
-  background: linear-gradient(transparent, #ccdacf, #abccb1)
+.nav-item a {
+  color: #791503;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
-.caldas, .risaralda, .quindio {
-  padding: 30px;
+h1, h4 {
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
 }
 
-.aboutCurrentCity {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.custom-welcome {
+  height: 50vh;
+}
+
+main {
+  margin-top: 20px;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  text-align: center;
-  color: #692A0C;
-  margin: 10px;
+  color: #791503;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 p {
-  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 800;
+  color: #000000;
+}
+
+.custom-state {
+  margin: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
 
-article img {
-  width: 50vw;
-  border-radius: 15px;
+.custom-image {
+  height: 200px;
 }
 
-article p {
-  width: 40vw;
+.custom-image img {
+  border-radius: 20px;
+  box-shadow: 8px 5px 5px #7915031c;
+  overflow: hidden;
+}
+
+.custom-background {
+  background-image: url('./images/coffeeandlandscape/buenavista-quindio-san-alberto.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-footer {
+  background-color: #f1f1f1;
+}
+
+.custom-footer a, .custom-footer-two p {
+  color: #ffffff;
+}
+
+.custom-footer-two {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .custom-button {
   width: auto;
   background-color: #fff;
   color: #000;
-}
-
-footer {
-  height: 120vh;
-  background: linear-gradient(
-    rgba(255 255 255 / 12%), 
-    rgba(255 255 255 / 23%)
-    ), url("./images/buenavista-quindio-san-alberto.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.container {
-  padding: 10px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 800;
-  color: #692A0C;
-  background-color: rgb(220, 220, 220 , 0.5);
-}
-
-footer a {
-  text-decoration: none;
-  color: #692A0C;
 }
