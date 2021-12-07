@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+.custom-buttom-carousel {
+  width: 0;
+  height: 0;
+}
+
+h4,
+p,
+div .user-name {
+  color: #000;
+}
+
+.custom-image {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('./images/termals-0.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('./images/termals-1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('./images/termals-2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Custom Navbar & Username */
+.custom-navbar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+}
+
+.custom-nav {
+  justify-content: flex-start !important;
+}
+
+.user-name {
+  margin-left: 0 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.custom-avatar {
+  margin-right: 5px;
+}
+
+.custom-image {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.custom-description {
+  flex-direction: column;
+}
+
+.custom-row-description {
+  margin-bottom: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.custom-heart {
+  margin-right: 10px;
+}
+
+.custom-place-description,
+.custom-card-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.custom-card-content {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.custom-button {
+  width: auto;
+  background-color: #fff;
+  color: #000;
+}

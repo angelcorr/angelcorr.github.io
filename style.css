@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+h2,
+h5 {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+h2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h5 {
+  font-style: italic;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #000;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.custom-container {
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.custom-description-card {
+  justify-content: end;
+}
+
+img {
+  height: 350px;
+  width: 450px;
+  border-radius: 5px;
+}
+
+.custom-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  box-shadow: none !important;
+}
+
+.custom-porfolio {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-family: 'Nanum Gothic', sans-serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}

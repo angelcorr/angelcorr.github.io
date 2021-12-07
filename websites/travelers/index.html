@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  <title>Travelers</title>
+</head>
+<body>
+  <!--Main Navigation-->
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <app-header></app-header>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Carousel wrapper -->
+  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+    </ol>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask custom-image">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h1 class="mb-3">Vive una experiencia inigualable en nuestros termales</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="mask custom-image">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h2>Donde podras relajarte y desconectarte en la naturaleza</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="mask custom-image">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h2>¡Reserva ya!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon custom-buttom-carousel" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+      <span class="carousel-control-next-icon custom-buttom-carousel" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel wrapper -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section>
+      <div class="row">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+            <img src="./images/termals-3.jpeg" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>Termales de Santa Rosa</strong></h4>
+          <p class="custom-place-description">
+            En termales Santa Rosa de Cabal podrás disfrutar de comodidades exclusivas mientras 
+            te cuidamos por medio de un programa de bioseguridad y estrictos protocolos que te 
+            harán sentir seguro en medio de la naturaleza.
+          </p>
+          <p class="custom-place-description">
+            Descubre un lugar entre las montañas del paisaje cultural cafetero donde te sentirás 
+            tranquilo y te conectarás con la naturaleza por medio de experiencias únicas de bienestar 
+            y relajación para tu mente, cuerpo y alma.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+    <!--Section: Content-->
+    <section class="text-center">
+      <h4 class="mb-5"><strong>Latest posts</strong></h4>
+
+      <div class="row">
+        <div class=" col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+              <div class="container-fluid custom-nav">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle custom-avatar" height="22" alt="" loading="lazy" />
+                <div class="user-name">
+                  termalesSantaRosa
+                </div>
+              </div>
+            </nav>
+            <div class="bg-image hover-overlay ripple custom-image" data-mdb-ripple-color="light">
+              <img src="./images/stay-termals.jpeg" class="img-fluid" />
+              <a href="#!">
+                <div style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex custom-row-description">
+                <i class="far fa-heart custom-heart"></i>
+                <i class="far fa-comment-alt"></i>
+              </div>
+              <div class="d-flex user-name">
+                termalesSantaRosa
+              </div>
+              <p class="d-flex card-text custom-card-content">
+                Stay with us inside the nature.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+              <div class="container-fluid custom-nav">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle custom-avatar" height="22" alt="" loading="lazy" />
+                <div class="user-name">
+                  termalesSantaRosa
+                </div>
+              </div>
+            </nav>
+            <div class="bg-image hover-overlay ripple custom-image" data-mdb-ripple-color="light">
+              <img src="./images/couple-termals.jpeg" class="img-fluid" />
+              <a href="#!">
+                <div style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex custom-row-description">
+                <i class="far fa-heart custom-heart"></i>
+                <i class="far fa-comment-alt"></i>
+              </div>
+              <div class="d-flex user-name">
+                termalesSantaRosa
+              </div>
+              <p class="d-flex card-text custom-card-content">
+                Enjoy and relax. Share and inspire.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+              <div class="container-fluid custom-nav">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle custom-avatar" height="22" alt="" loading="lazy" />
+                <div class="user-name">
+                  termalesSantaRosa
+                </div>
+              </div>
+            </nav>
+            <div class="bg-image hover-overlay ripple custom-image" data-mdb-ripple-color="light">
+              <img src="./images/try.jpeg" class="img-fluid" />
+              <a href="#!">
+                <div style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex custom-row-description">
+                <i class="far fa-heart custom-heart"></i>
+                <i class="far fa-comment-alt"></i>
+              </div>
+              <div class="d-flex user-name">
+                termalesSantaRosa
+              </div>
+              <p class="d-flex card-text custom-card-content">
+                Lodotherapy is waiting for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+  </div>
+
+  <a href="../">
+    <button type="button" class="btn btn-floating fixed-action-btn custom-button">
+      <i class="fas fa-home fa-2x custom-icon"></i>
+    </button>
+  </a>
+</main>
+<!--Main layout-->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js">
+  </script>
+</body>
+</html>
