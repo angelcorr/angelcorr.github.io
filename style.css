@@ -28,34 +28,9 @@ a {
   color: #000;
 }
 
-.custom-container {
+.custom-page {
+  width: 60vw;
   height: 100vh;
-  width: 100vw;
-  flex-direction: column;
-}
-
-.custom-description-card {
-  justify-content: end;
-}
-
-img {
-  height: 350px;
-  width: 450px;
-  border-radius: 5px;
-}
-
-.custom-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  box-shadow: none !important;
-}
-
-.custom-porfolio {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -67,4 +42,12 @@ button {
   border-radius: 5px;
   background-color: #fff;
   color: #000;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .custom {
+    margin-top: 200px !important;
+    margin-bottom: 20px !important;
+  }
+
 }
