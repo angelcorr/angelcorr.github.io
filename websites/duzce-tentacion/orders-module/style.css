@@ -97,3 +97,19 @@ select {
   background-color: #fff;
   color: #000;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .custom-button {
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #ffffff8f;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-2x {
+    font-size: 1em;
+  }
+
+}
