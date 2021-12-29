@@ -130,7 +130,7 @@ ul {
 
 .nav-list ul {
   display: flex;
-  width: 60vw;
+  width: 80vw;
   font-size: 1.2rem;
   padding-right: 50px;
   justify-content: space-evenly;
@@ -197,12 +197,10 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-  height: 70vh;
+    height: 70vh;
 }
 
 .hire-an-agent h2 {
-  font-size: 3rem;
   letter-spacing: 0.2rem;
   word-spacing: 0.2rem;
 }
@@ -383,6 +381,7 @@ footer a {
 }
 
 .organized {
+  padding-top: 30px;
   width: 40%;
   justify-content: space-evenly;
 }
@@ -409,6 +408,24 @@ footer {
   background-size: cover;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hire-an-agent h2 {
+    font-size: 2rem !important;
+  }
+
+  .custom-nav-list {
+    justify-content: space-around;
+  }
+
+  .nav-list {
+    width: 70vw;
+  }
+
+  .nav-list ul {
+    font-size: .9rem !important;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1200px) {
   p {
     border-top: none;
@@ -417,6 +434,7 @@ footer {
   h2 {
     border-bottom: none;
   }
+
 }
 
 @media (max-width: 768px) {
