@@ -381,10 +381,6 @@ footer a {
   align-items: center;
 }
 
-.phone-number i {
-  align-items: center !important;
-}
-
 .email p,
 .information p,
 .city-address p,
@@ -629,27 +625,24 @@ footer a {
     margin-left: 0;
   }
 
-  .number {
+  .phone-number {
     align-items: center;
+    flex-direction: row;
   }
   
   .email i
-  .number i {
+  .phone-number i {
     margin-right: 10px !important;
   }
 
   .email p,
-  .number p {
+  .phone-number p {
     padding-top: 0;
     margin-bottom: 0;
   }
 
   .work-time p {
     padding-bottom: 0;
-  }
-
-  .phone-number {
-    flex-direction: column;
   }
 
   .address {
