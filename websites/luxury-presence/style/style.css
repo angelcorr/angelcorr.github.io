@@ -374,10 +374,15 @@ footer a {
 }
 
 .email,
-.information,
-.city-address,
-.work-time {
+.phone-number,
+.direction,
+.work-time,
+.hours {
   align-items: center;
+}
+
+.phone-number i {
+  align-items: center !important;
 }
 
 .email p,
@@ -386,7 +391,7 @@ footer a {
 .work-time p,
 .email i,
 .direction i,
-.number i,
+.phone-number i,
 .hours i {
   padding-top: 0;
   margin-bottom: 0;
