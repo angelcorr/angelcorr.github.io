@@ -119,6 +119,8 @@ ul {
 
 /* Hamburger */
 
+/* Navigation */
+
 .custom-nav-list {
   justify-content: space-between;
   padding-top: 50px;
@@ -146,6 +148,10 @@ ul {
   width: 11rem;
 }
 
+/* Navigation */
+
+/* Home */
+
 .custom-principal {
   height: 100%;
   width: 100%;
@@ -163,6 +169,10 @@ h1 {
   word-spacing: 0.2rem;
   letter-spacing: 0.1rem;
 }
+
+/* Home */
+
+/* Contact Us */
 
 .learn-more {
   background-color: #152e54;
@@ -188,6 +198,10 @@ h3 {
   word-spacing: 0.3rem;
   letter-spacing: 0.2rem;
 }
+
+/* Contact Us */
+
+/* Main */
 
 .hire-an-agent {
   background: linear-gradient(
@@ -282,6 +296,25 @@ p {
   color: #000000;
 }
 
+/* Main */
+
+/* Footer */
+
+footer section {
+  flex-direction: column;
+}
+
+footer {
+  background: linear-gradient(
+    #fffefec7, 
+    #fffefec7
+    ), url('./../media/images/palm.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 footer p {
   border-top: none;
@@ -392,29 +425,13 @@ footer a {
   padding-bottom: 30px;
 }
 
-footer section {
-  flex-direction: column;
-}
+/* Footer */
 
-footer {
-  background: linear-gradient(
-    #fffefec7, 
-    #fffefec7
-    ), url('./../media/images/palm.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* Media Queries  */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .hire-an-agent h2 {
     font-size: 2rem !important;
-  }
-
-  .custom-nav-list {
-    justify-content: space-around;
   }
 
   .nav-list {
@@ -434,7 +451,22 @@ footer {
   h2 {
     border-bottom: none;
   }
+}
 
+@media (min-width: 768px) and (max-width: 1310px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-toggle {
+    top: 5.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 864px) {
+  .hire-an-agent h2 {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -607,6 +639,10 @@ footer {
     margin-bottom: 0;
   }
 
+  .work-time p {
+    padding-bottom: 0;
+  }
+
   .phone-number {
     flex-direction: column;
   }
@@ -721,3 +757,5 @@ footer {
    }
 
 }
+
+/* Media Queries */
