@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 .header-background {
   background: linear-gradient(
@@ -12,14 +13,14 @@
   background-position: center;
 }
 
-.floating-buttons {
- display: none 
+.floating-buttons .custom-btn {
+  background-color: #152e54;
+  color: #ffffff;
 }
 
 /* Hamburger */
 
 /* imports */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 /* nav toggle */
 .nav-toggle {
   cursor: pointer;
@@ -44,7 +45,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: white;
+  background: #1f1e1e;
   content: "";
   height: 0.01rem;
   transition: all 0.5s;
@@ -430,9 +431,14 @@ footer a {
 
 /* Media Queries  */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1100px) {
   .hire-an-agent h2 {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  .hire-an-agent p {
+    width: 90vw;
+    font-size: 1rem;
   }
 
   .nav-list {
