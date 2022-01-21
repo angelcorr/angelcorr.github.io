@@ -392,7 +392,7 @@ footer a {
 .hours i {
   padding-top: 0;
   margin-bottom: 0;
-  width: 20wv;
+  /* width: 20vw; */
   color: #000000;
 }
 
@@ -431,7 +431,11 @@ footer a {
 
 /* Media Queries  */
 
-@media (min-width: 769px) and (max-width: 1100px) {
+@media (min-width: 769px) and (max-width: 830px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
   .hire-an-agent h2 {
     font-size: 1.4rem !important;
   }
@@ -470,9 +474,23 @@ footer a {
   }
 }
 
+@media (min-width: 760px) and (max-width: 769px) {
+  figure img {
+    width: 60vw;
+    height: 40vh;
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 864px) {
   .hire-an-agent h2 {
     margin-top: 30px;
+  }
+
+  .contact, 
+  .address,
+  .open-hours {
+    margin-left: 200px;
   }
 }
 
