@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+main {
+  margin-bottom: 50px;
+}
+
 .main-picture {
   height: 100vh;
   width: 100%;
@@ -67,7 +71,17 @@ h1 {
   text-align: justify;
 }
 
-.lastest-posts {
+h4 {
+  text-align: center;
+}
+
+.posts h4 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.latest-posts {
   display: flex;
   justify-content: space-around;
 }
@@ -91,7 +105,7 @@ h1 {
 }
 
 .post-image img {
-  width: 20vw;
+  width: 25vw;
 }
 
 a {
@@ -101,9 +115,18 @@ a {
   color: #000000;
 }
 
+.post-footer {
+  margin: 15px 0;
+  padding-left: 10px;
+}
+
 .post-footer p {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   margin: 5px 0;
+}
+
+.custom-heart {
+  margin-right: 5px;
 }
 
 .profile-picture img,
@@ -112,4 +135,88 @@ a {
 .post-footer a,
 .post-footer p {
   margin: 5px 5px;
+}
+
+.floating-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid #006400;
+  background-color: #006400;
+}
+
+.custom-button i {
+  font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 20px;
+    width: 70vw;
+  }
+
+  .display-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-profile-picture {
+    width: 70vw;
+  }
+
+  .description {
+    width: 80vw;
+  }
+
+  .latest-posts {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .post {
+    width: 54vw;
+  }
+
+  .profile-picture img {
+    height: 20px;
+  }
+
+  .post-image img {
+    width: 54vw;
+  }
+  .user-name,
+  .post-footer a,
+  .post-footer p {
+    font-size: 12px;
+  }
+
+  .reaction {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 860px) {
+  h1 {
+    font-size: 30px;
+    width: 80vw;
+  }
+
+  .display-image {
+    align-items: center;
+  }
 }
