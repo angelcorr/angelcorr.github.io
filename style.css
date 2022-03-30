@@ -1,79 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-h2,
-h5 {
-  font-family: 'Playfair Display', serif;
-  color: #000;
+* {
+  box-sizing: border-box;
 }
 
-h2 {
-  justify-content: flex-start;
-  align-items: flex-start;
+body {
+  margin: 0 0;
 }
 
-h5 {
-  font-style: italic;
-}
-
-p {
-  font-family: 'Nanum Gothic', sans-serif;
-  color: #000;
-  text-align: justify;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.custom-description {
-  flex-direction: column;
+.main-header {
+  margin-top: 1.9rem;
+  display: flex;
   justify-content: center;
+}
+
+.header-distribution {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.custom-page {
-  width: 60vw;
+.my-image img {
+  width: 15vw;
+  height: auto;
+  border-radius: 8rem;
+  animation: transitionLeft 1s;
+}
+
+.description {
+  text-align: center;
+  animation: transitionRight 1s;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.description h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5rem;
+}
+
+.description article p {
+  width: 30vw;
+  margin: 0 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+.social-networks {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: transitionButton 1s;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main-description {
+  width: 100vw;
   height: 100vh;
-  align-items: center;
-}
-
-.about {
-  margin: 10px 0 10px;
-  border-top: 1px solid #00000031;
-  border-bottom: 1px solid #00000031;
-}
-
-a {
-  width: 100px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Nanum Gothic', sans-serif;
-  border: 1px solid #000;
-  border-radius: 5px;
+  background-color: #70ccd8;
+}
+
+.my-description {
+  width: 49vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid #70ccd8;
+  border-radius: 34px;
+  padding: 0 45px 0 45px;
   background-color: #fff;
-  color: #000;
-  transition: all .3s linear;
 }
 
-a:hover {
-  transform: scale(1.1);
-  background-color: #000;
-  color: #fff;
+.portfolio {
+  text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .custom {
-    margin-top: 200px !important;
-    margin-bottom: 20px !important;
+.portfolio a {
+  color: #005d00;
+}
+
+.active {
+  animation: transitionPortfolio 1s;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h1 a {
+  text-decoration: none;
+  width: 100vw;
+  font-family: 'Titan One', cursive;
+  letter-spacing: 6rem;
+}
+
+.technologies {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.technology {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.technology i {
+  font-size: 10rem;
+  color: mediumpurple;
+}
+
+.work {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.work h2 {
+  text-align: center;
+  font-family: 'Rozha One', serif;
+  font-size: 4rem;
+  color: #424242;
+}
+
+.work-experience {
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(110, 0, 0, 0.555);
+  border-radius: 100px;
+}
+
+.crazystream-logo img {
+  width: 10vw;
+  height: 15vh;
+  transition: all 1s ease;
+  border-radius: 80px;
+}
+
+.crazystream-logo img:hover {
+  transform: scale(1.5);
+}
+
+.job-description h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.5rem;
+}
+
+.job-description p {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.about-job {
+  width: 40%;
+}
+
+@keyframes transitionLeft {
+  from {
+    transform: translateX(-100vw);
   }
 
-  .custom-description {
-    margin-bottom: 50px;
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionRight {
+  from {
+    transform: translateX(200vw);
+  }
+  
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionButton {
+  from {
+    transform: translateY(100vw);
   }
 
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionPortfolio {
+  from {
+    transform: translateX(-100vh);
+  }
+  
+  to {
+    transform: translateX(0);
+  }
 }

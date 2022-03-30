@@ -4,59 +4,129 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Angeles' Web Page</title>
 </head>
 <body>
-  
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="./style.css">
-  <title>Angeles' Web Page</title>
-</head>
-<body>
-  <div class="container d-flex custom-page">
-    <div class="row d-flex">
-      <div class="col-md-7 custom-image">
+  <section class="main-header">
+    <div class="header-distribution">
+      <div class="my-image">
         <img
-          src="./images/angelesRondon.jpeg"
-          class="img-thumbnail custom"
-        />
+            src="./images/angeles-rondon.jpeg"
+          />
       </div>
-      <div class=" d-flex col-md-5 custom-description">
-        <h2>
-          ÁNGELES RONDÓN
-        </h2>
-        <div class="about">
-          <h5>I'm a Front-End Developer</h5>
+      <div class="description">
+        <article>
+          <h2>
+            Junior web developer? Maybe
+          </h2>
           <p>
-            I like design and when a website looks good. 
-            My skills include JavaScript, TypeScript, HTML5, CSS3,
-            Bootstrap, MDBootstrap, Angular, ReactJS, MongoDB and
-            NodeJS. 
+            C'est une chose admirable, que tous les grands
+            hommes ont toujours du caprice, quelque petit
+            grain de folie mêlé à leur science.
           </p>
-        </div>
+          <p>
+            -Moliére.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-networks">
+    <div class="logo">
+      <a href="https://www.facebook.com/angelesrondonc/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://www.instagram.com/angelesemilianaa/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://www.linkedin.com/in/%C3%A1ngeles-rond%C3%B3n-01aab0226/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://github.com/angelcorr" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="main-description">
+    <article class="my-description">
+      I'm a Junior Front End developer and kinda a singer.
+      I like to watch movies and keep learning so I can create amazing apps.
+      Also, I have a cat, Pinky, she's my hole world.
+    </article>
+  </section>
+
+  <section>
+    <div class="portfolio">
+      <h1>
         <a href="./websites/">
           Portfolio
         </a>
+      </h1>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <div class="technology">
+      <div>
+        <i class="fa-brands fa-html5"></i>
+      </div>
+      <div>
+        <i class="fa-brands fa-css3-alt"></i>
+      </div>
+      <div>
+        <i class="fa-brands fa-js-square"></i>
       </div>
     </div>
-  </div>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js">
-  </script>
+    <div class="technology">
+      <div>
+        <i class="fa-brands fa-react"></i>
+      </div>
+      <div>
+        <i class="fa-brands fa-angular"></i>
+      </div>
+      <div>
+        <i class="fa-brands fa-node-js"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <h2>
+      Work Experience
+    </h2>
+    <div class="work-experience">
+      <div class="crazystream-logo">
+        <a href="https://www.crazystream.co/" target="_blank">
+          <img src="./images/crazy-streamer-logo.png" alt="Crazystreamer logo">
+        </a>
+      </div>
+      <div class="about-job">
+        <article class="job-description">
+          <h3>
+            Junior Front End Developer
+          </h3>
+          <strong>
+            Jan 02 2022 - Now
+          </strong>
+          <p>
+            As a junior front-end developer I help rewriting the old
+            Codeigniter code to JavaScript using Angular 12.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/b79b8b1ac4.js" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
