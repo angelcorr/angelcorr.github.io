@@ -290,4 +290,60 @@ h1 a {
     width: 40vw;
     height: 20vh;
   }
+
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
+  .main-header {
+    margin-top: 5rem;
+  }
+
+  .header-distribution {
+    flex-direction: column;
+  }
+
+  .description article {
+    width: 60vw;
+    text-align: center;
+  }
+
+  .my-image img {
+    width: 30vw;
+  }
+
+  .description article p {
+    width: 100%;
+  }
+
+  .my-description {
+    width: 70vw;
+    height: 30vh;
+    font-size: 1.8rem;
+  }
+
+  h1 a {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  .work-experience {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .crazystream-logo img {
+    margin-top: 10px;
+    width: 20vw;
+    height: 14vh;
+  }
+
+  .job-description h3 {
+    font-size: 1.8rem;
+  }
+
+  .job-description p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
 }
