@@ -103,12 +103,9 @@ article {
   animation: transitionPortfolio 1s;
 }
 
-h1 {
+h1 a {
   font-size: 5rem;
   text-transform: uppercase;
-}
-
-h1 a {
   text-decoration: none;
   width: 100vw;
   font-family: 'Titan One', cursive;
@@ -220,5 +217,77 @@ h1 a {
   
   to {
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 780px) {
+  .header-distribution {
+    flex-direction: column;
+  }
+
+  .my-image img {
+    width: 30vw;
+  }
+
+  .description h2 {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  h1 a {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+
+  .description article p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .my-description {
+    width: 70vw;
+    height: 40vh;
+    font-size: 1.4rem;
+  }
+
+  .technology i {
+    font-size: 5rem;
+  }
+
+  .work h2 {
+    font-size: 2.4rem;
+  }
+
+  .work-experience {
+    width: 80vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  .job-description {
+    text-align: center;
+    align-items: center;
+  }
+
+  .job-description h3 {
+    font-size: 1.4rem;
+  }
+
+  .job-description p {
+    font-size: .9rem;
+    width: 80%;
+  }
+
+  .about-job {
+    width: 100%;
+  }
+
+  .crazystream-logo img {
+    margin-top: 10px;
+    width: 40vw;
+    height: 20vh;
   }
 }
