@@ -13,21 +13,22 @@ body {
 }
 
 .main-header {
-  margin-top: 1.9rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 
 .header-distribution {
   width: 70vw;
-  height: 50vh;
+  height: 25rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 .my-image img {
-  width: 15vw;
+  width: 25vw;
   height: auto;
   border-radius: 8rem;
   animation: transitionLeft 1s;
@@ -41,16 +42,18 @@ body {
 article {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
-.description h2 {
+.description h1 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 2.9rem;
+  font-size: 1.5rem;
 }
 
 .description article p {
-  width: 30vw;
+  width: 100%;
   margin: 0 0;
   font-family: 'Great Vibes', cursive;
   font-size: 1.5rem;
@@ -58,7 +61,7 @@ article {
 
 .social-networks {
   width: 100vw;
-  height: 50vh;
+  height: 15rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -66,13 +69,17 @@ article {
 }
 
 .logo {
+  font-size: 2rem;
   text-align: center;
-  font-size: 4rem;
+}
+
+.logo a i:hover {
+  color: #008000;
 }
 
 .main-description {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,11 +87,11 @@ article {
 }
 
 .my-description {
-  width: 49vw;
-  height: 15vh;
+  width: 70vw;
+  height: 40vh;
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: 1px solid #70ccd8;
   border-radius: 34px;
   padding: 0 45px 0 45px;
@@ -101,30 +108,27 @@ article {
   animation: transitionPortfolio 1s;
 }
 
-h1 {
-  font-size: 5rem;
+h2 {
+  font-size: 1.8rem;
   text-transform: uppercase;
   width: 100vw;
   font-family: 'Titan One', cursive;
-  letter-spacing: 3rem;
+  letter-spacing: .5rem;
   transition: all .8s ease-in-out;
-}
-
-h1:hover {
-  transform: scale(1.5);
 }
 
 .portfolio p {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1.5rem;
+  font-size: .74rem;
 }
 
 .technologies {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -135,56 +139,78 @@ h1:hover {
 }
 
 .technology i {
-  font-size: 10rem;
+  font-size: 5rem;
   color: mediumpurple;
 }
 
 .work {
-  height: 100vh;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.work h2 {
+.work h1 {
   text-align: center;
   font-family: 'Rozha One', serif;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #424242;
 }
 
 .work-experience {
-  width: 40vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #70ccd8;
-  border-radius: 100px;
 }
 
-.crazystream-logo img {
-  width: 10vw;
-  height: 15vh;
+.job {
+  width: 80vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.job-description {
+  text-align: center;
+  align-items: center;
+}
+
+.company-logo img {
+  width: 10rem;
+  height: 10rem;
   transition: all 1s ease;
   border-radius: 80px;
+  margin-top: 10px;
 }
 
-.crazystream-logo img:hover {
+.company-logo img:hover {
   transform: scale(1.5);
 }
 
-.job-description h3 {
+.job-description h4 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .job-description p {
   font-family: 'Nanum Gothic', sans-serif;
+  font-size: .9rem;
+  width: 80%;
 }
 
 .about-job {
-  width: 40%;
+  width: 100%;
+}
+
+.job-distribution {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @keyframes transitionLeft {
@@ -227,137 +253,61 @@ h1:hover {
   }
 }
 
-@media (min-width: 318px) and (max-width: 780px) {
-  .main-header {
-    margin-top: 20px;
-  }
-  
+@media (min-width: 768px) {
   .header-distribution {
-    flex-direction: column;
+    height: 35rem;
   }
 
-  .description h2 {
-    font-size: 1.5rem;
-  }
-
-  .logo {
-    font-size: 2rem;
-  }
-
-  .logo a i:hover {
-    color: #008000;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    letter-spacing: .8rem;
-  }
-
-  h1:hover {
-    transform: scale(1);
-  }
-
-  .portfolio p {
-    font-size: .74rem;
-  }
-
-  .description article p {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .my-description {
-    width: 70vw;
-    height: 40vh;
-    font-size: 1rem;
-  }
-
-  .technology i {
-    font-size: 5rem;
-  }
-
-  .work h2 {
-    font-size: 2rem;
-  }
-
-  .work-experience {
-    width: 80vw;
-    height: 60vh;
-    flex-direction: column;
-  }
-
-  .job-description {
-    text-align: center;
-    align-items: center;
-  }
-
-  .job-description h3 {
-    font-size: 1.1rem;
-  }
-
-  .job-description p {
-    font-size: .9rem;
-    width: 80%;
-  }
-
-  .about-job {
-    width: 100%;
-  }
-
-  .crazystream-logo img {
-    margin-top: 10px;
-    width: 40vw;
-    height: 20vh;
-  }
-
-}
-
-@media (min-width: 781px) and (max-width: 1200px) {
-  .main-header {
-    margin-top: 5rem;
-  }
-
-  .header-distribution {
-    flex-direction: column;
+  .description h1 {
+    font-size: 2.9rem;
   }
 
   .description article {
     width: 60vw;
-    text-align: center;
   }
 
   .my-image img {
     width: 18vw;
   }
 
-  .description article p {
-    width: 100%;
-  }
-
   .my-description {
     width: 70vw;
     height: 30vh;
     font-size: 1.8rem;
   }
 
-  h1 {
+  h2 {
     font-size: 3rem;
-    letter-spacing: .5rem;
+    letter-spacing: 2rem;
   }
 
-  .work-experience {
+  .logo {
+    font-size: 4rem;
+  }
+
+  .portfolio p {
+    font-size: 1.5rem;
+  }
+
+  .technologies {
+    height: 65vh;
+  }
+
+  .technology i {
+    font-size: 10rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .job {
     width: 80vw;
-    height: 30vh;
   }
 
-  .crazystream-logo img {
-    margin-top: 10px;
-    width: 20vw;
-    height: 14vh;
-  }
-
-  .job-description h3 {
-    font-size: 1.8rem;
+  .job-description h4 {
+    font-size: 1.5rem;
   }
 
   .job-description p {
@@ -365,4 +315,66 @@ h1:hover {
     width: 100%;
   }
 
+  .work h1 {
+    font-size: 4rem;
+  }
+
+  .about-job {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    margin-top: 1.9rem;
+  }
+
+  .header-distribution {
+    flex-direction: row;
+  }
+
+  .description article {
+    width: 50vw;
+  }
+
+  .main-description {
+    height: 50vh;
+  }
+
+  .my-description {
+    width: 49vw;
+    height: 25vh;
+    font-size: 1.5rem;
+  }
+
+  .description article p {
+    width: 30vw;
+  }
+
+  h2 {
+    font-size: 5rem;
+    letter-spacing: 3rem;
+  }
+
+  h2:hover {
+    transform: scale(1.3);
+  }
+
+  .technologies {
+    height: 80vh;
+  }
+
+  .work {
+    margin-bottom: 5rem;
+  }
+
+  .job {
+    width: 50rem;
+    flex-direction: row;
+  }
+
+  .company-logo img {
+    width: 10rem;
+    height: 10rem;
+  }
 }
