@@ -4,131 +4,134 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Angeles' icon" href="./images/favicon_io/favicon.ico"/>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Angeles' Web Page</title>
+    <title>Angeles Rondon</title>
   </head>
   <body>
-    <section class="main-header">
-      <div class="header-distribution">
-        <div class="my-image">
-          <img src="./images/angeles-rondon.jpeg" />
-        </div>
-        <div class="description">
-          <article>
-            <h1>Software Developer</h1>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="content" id="info">
+        <div class="about-me set-visibility">
+          <h1>Angeles Rondon</h1>
+          <h2>Full-Stack Software Developer</h2>
+          <div class="brief">
             <p>
-              C'est une chose admirable, que tous les grands hommes ont toujours
-              du caprice, quelque petit grain de folie mêlé à leur science.
+              Currently working full-time as a Software Developer at <a href="https://qubika.com/">Qubika</a> - <a href="https://moove-it.com/">Moove It</a>
             </p>
-            <p>-Moliére.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="social-networks">
-      <div class="logo">
-        <a
-          href="https://www.linkedin.com/in/%C3%A1ngeles-rond%C3%B3n-01aab0226/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="logo">
-        <a href="https://github.com/angelcorr" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </section>
-
-    <section class="main-description">
-      <article class="my-description">
-        I'm a Software Developer and kinda a singer. I like to dance
-        and keep learning so I can create amazing apps. Also, I have two
-        cat, Pinky and Brain, they are my whole world.
-      </article>
-    </section>
-
-    <section class="portfolio">
-      <a href="./websites/">
-        <h2>Portfolio</h2>
-        <p>Take a look at the websites I build! (And still building)</p>
-      </a>
-    </section>
-
-    <section class="technologies">
-      <div class="technology">
-        <div>
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <div>
-          <i class="fa-brands fa-css3-alt"></i>
-        </div>
-        <div>
-          <i class="fa-brands fa-js-square"></i>
-        </div>
-      </div>
-      <div class="technology">
-        <div>
-          <i class="fa-brands fa-react"></i>
-        </div>
-        <div>
-          <i class="fa-brands fa-angular"></i>
-        </div>
-        <div>
-          <i class="fa-brands fa-node-js"></i>
-        </div>
-      </div>
-    </section>
-
-    <section class="work">
-      <h3>Work Experience</h3>
-      <div class="work-experience">
-        <div class="job">
-          <div class="company-logo">
-            <a href="https://www.crazystream.co/" target="_blank">
-              <img
-                src="./images/crazy-streamer-logo.png"
-                alt="Crazystreamer logo"
-              />
-            </a>
           </div>
-          <div class="about-job">
-            <div>
-              <article class="job-description">
-                <h4>Junior Front End Developer</h4>
-                <strong> Jan 2022 - July 2022 </strong>
-                <p>
-                  As a junior front-end developer I help rewriting the old
-                  Codeigniter code to JavaScript using Angular 12.
-                </p>
-              </article>
+        </div>
+        <div class="my-info set-visibility">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="./websites/">Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+      <div class="content-work">
+        <div class="title">
+          <h2>Work</h2>
+        </div>
+        <div class="crazy-stream">
+          <div class="asset">
+            <div class="asset-frame-left">
+              <figure>
+                <img src="./images/crazy-streamer-logo.png" alt="Crazystreamer logo" />
+              </figure>
             </div>
           </div>
-        </div>
-        <div class="job">
-          <div class="company-logo">
-            <a href="https://moove-it.com/" target="_blank">
-              <img src="./images/moove-it-logo.png" alt="Moove It logo" />
-            </a>
+          <div class="job-description">
+            <h3>Front-end Developer Junior</h3>
+            <h4>Jan 2022 - Jul 2022 </h4>
+            <h4><a href="https://www.crazystream.co/" target="_blank">Crazy Stream</a></h4>
+            <p>Rewriting legacy PHP (Codeigniter) code into JavaScript using Angular 12, HTML, CSS and Bootstrap.</p>
           </div>
-          <div class="about-job">
-            <div>
-              <article class="job-description">
-                <h4>Software Developer</h4>
-                <strong> Aug 2022 - Now </strong>
-                <p>
-                  With my knowledge I help with the creation of landings,
-                  improving layouts and code.
-                </p>
-              </article>
+        </div>
+        <div class="moove-it-qubika">
+          <div class="asset">
+            <div class="asset-frame-right">
+              <figure>
+                <img src="./images/moove-it-logo.png" alt="Moove It logo" />
+              </figure>
             </div>
+          </div>
+          <div class="job-description">
+            <h3>Software Developer</h3>
+            <h4>Aug 2022 - Present</h4>
+            <h4><a href="https://moove-it.com/" target="_blank">Moove It</a> - <a href="https://qubika.com/" target="_blank">Qubika</a></h4>
+            <p>
+              Create landings for the Moove It's main page, also helping the Niños sin Dolor Foundation website.
+              Participating in workshops, taking new courses and improving my English vocabulary.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="content-about">
+        <div class="title">
+          <h2>About</h2>
+        </div>
+        <div class="about-description">
+          <div class="angeles-asset">
+            <figure>
+              <img src="./images/angeles-rondon.jpeg" />
+            </figure>
+          </div>
+          <div class="angeles-description">
+            <p>
+              I'm a Software Developer and kinda a singer. Also, I like to dance a lot.
+              <span>I have two cats 🐈, Pinky and Brain, they are the most beautiful and funny cats.</span>
+              <span>
+                What I like the most about programming is how smart I feel every
+                time I can solve a very hard problem. 👩🏽‍💻
+              </span>
+              <span>
+                So far I have 2 years of experience and I believe I will be coding
+                until I get old. 👵🏼
+              </span>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="content-contact">
+        <div class="title">
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-description">
+          <h4>Let's get in touch!</h4>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/%C3%A1ngeles-rond%C3%B3n-01aab0226/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/angelcorr" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="email">
+            <p>Or send me a message <a href="mailto:angelesemilianaa@gmail.com" target="_blank">here</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Js -->
     <script
       src="https://kit.fontawesome.com/b79b8b1ac4.js"
       crossorigin="anonymous"
