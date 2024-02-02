@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  <title>Düzce Tentación</title>
+</head>
+<body>
+  <header>
+    <h1>Düzce Tentación</h1>
+  </header>
+
+  <section>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <div class="card col-8 col-md-8 col-lg-8 custom-card">
+          <div class="card-body">
+            <h5 class="card-title custom-card-title">Haz el pedido ya!</h5>
+            <form action="" class="custom-form" name="cakeOrders">
+              <label for="portions">Porciones</label>
+              <select class="select" name="portions" id="portions" required>
+                <option value="" class="d-none"></option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="70">70</option>
+              </select>
+              
+              <label for="pastries">Masas</label>
+              <select class="select" name="pastries" id="pastries" required>
+                <option value="" class="d-none"></option>
+                <option value="Banano">Banano</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Frutos Rojos">Frutos Rojos</option>
+              </select>
+              
+              <label for="glaze">Glaceado</label>
+              <select class="select" name="glaze" id="glaze" required>
+                <option value="" class="d-none"></option>
+                <option value="Nutella">Nutella</option>
+                <option value="Ganache">Ganache</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Arequipe">Arequipe</option>
+                <option value="Frutos Rojos">Frutos Rojos</option>
+              </select>
+              
+              <label for="decoration">Decoración</label>
+              <select class="select" name="decoration" id="decoration" required>
+                <option value="" class="d-none"></option>
+                <option value="Fondat">Fondant</option>
+                <option value="Chocolate modelar">Chocolate para modelar</option>
+                <option value="Ganache Chocolate Negro">Chocolate Negro</option>
+                <option value="Ganache Chocolate Blanco">Chocolate Blanco</option>
+                <option value="Ganache Chocolate Leche">Chocolate Leche</option>
+              </select>
+              
+              <label for="orderDate">Fecha de compra</label>
+              <input type="date" id="orderDate" name="orderDate" required>
+              
+              <button id="create-order" type="button">Realizar pedido</button>
+            </form>
+          </div>  
+        </div>
+
+        <form name="tableMain">
+          <div class="row">
+            <div class="col-8 col-md-8 col-lg-12 custom-table" style = "float: left">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Porciones</th>
+                    <th scope="col">Masa</th>
+                    <th scope="col">Glaceado</th>
+                    <th scope="col">Decoracion</th>
+                    <th scope="col">Fecha de compra</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <a href="../../">
+    <button type="button" class="btn btn-floating fixed-action-btn custom-button">
+      <i class="fas fa-home fa-2x custom-icon"></i>
+    </button>
+  </a>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

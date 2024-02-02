@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+body {
+  background-color: #fff3e742;
+}
+
+header {
+  margin: 20px 20px 20px 20px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #80421b;
+}
+
+section {
+  height: 100%;
+}
+
+h5, label {
+  color: #80421b;
+}
+
+.custom-card {
+  background-color: #ebc9d5d6;
+  border-radius: 30px;
+}
+
+.custom-card-title {
+  text-align: center;
+}
+
+.select {
+  color: #5c3014;
+  border: 2px solid #80421b;
+  border-radius: 10px;
+  background-color: #FDE2E4;
+}
+
+input {
+  color: #5c3014;
+  border: 2px solid #80421b;
+  border-radius: 10px;
+  background-color: #FDE2E4;
+}
+
+button {
+  margin-top: 10px;
+  color: #5c3014;
+  border: 2px solid #80421b;
+  border-radius: 10px;
+  background-color: #FDE2E4;
+}
+
+.options {
+  color: #80421b;
+}
+
+h5 {
+  font-family: 'Carattere', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.custom-form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+th, td {
+  color: #5c3014;
+}
+
+select {
+  width: 25vw;
+}
+
+.custom-table {
+  margin-top: 50px;
+}
+
+.custom-btn {
+  color: #5c3014;
+  border: 1px solid #5c3014;
+}
+
+.custom-button {
+  width: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .custom-button {
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #ffffff8f;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-2x {
+    font-size: 1em;
+  }
+
+}
