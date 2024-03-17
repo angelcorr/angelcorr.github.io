@@ -369,10 +369,6 @@ body {
     text-align: start;
   }
 
-  .brief a {
-    text-underline-offset: 8px;
-  }
-
   .my-info {
     align-items: flex-start;
   }
