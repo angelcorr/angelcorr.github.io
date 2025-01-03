@@ -6,7 +6,7 @@
   background: linear-gradient(
     #00000071, 
     #00000071
-    ), url('./../media/images/beach-house-pool.jpg');
+    ), url('./../media/beach-house-pool.jpg');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,7 +208,7 @@ h3 {
   background: linear-gradient(
     #fffefe75, 
     #fffefeeb
-    ), url('./../media/images/house-at-the-beach.jpeg');
+    ), url('./../media/house-at-the-beach.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,7 +268,7 @@ p {
 }
 
 .parallax {
-  background-image: url('../media/images/florida.jpg');
+  background-image: url('../media/florida.jpg');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -309,7 +309,7 @@ footer {
   background: linear-gradient(
     #fffefec7, 
     #fffefec7
-    ), url('./../media/images/palm.jpg');
+    ), url('./../media/palm.jpg');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
