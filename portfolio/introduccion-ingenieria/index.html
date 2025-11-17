@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Angeles' icon" href="./assets/favicon_io/favicon.ico" />
   <title>Acumulaciónn de Residuos Tecnológicos</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./main.js"></script>
   <style src="./styles.css"></style>
@@ -19,13 +20,13 @@
       </div>
       <div class="hidden md:flex space-x-6">
         <a href="#inicio" data-target="inicio" class="nav-link text-gray-600 hover:text-green-700 pb-1">Inicio</a>
+        <a href="#presentacion" data-target="presentacion"
+          class="nav-link text-gray-600 hover:text-green-700 pb-1">Presentacion</a>
         <a href="#problema" data-target="problema" class="nav-link text-gray-600 hover:text-green-700 pb-1">El
           Problema</a>
         <a href="#impacto" data-target="impacto" class="nav-link text-gray-600 hover:text-green-700 pb-1">Impacto</a>
-        <a href="#soluciones" data-target="soluciones"
-          class="nav-link text-gray-600 hover:text-green-700 pb-1">Soluciones</a>
-        <a href="#propuesta" data-target="propuesta"
-          class="nav-link text-gray-600 hover:text-green-700 pb-1">Propuesta</a>
+        <a href="#metodo-ingeniero" data-target="impacto"
+          class="nav-link text-gray-600 hover:text-green-700 pb-1">Método del Ingeniero</a>
         <a href="#fuentes" data-target="fuentes" class="nav-link text-gray-600 hover:text-green-700 pb-1">Fuentes</a>
       </div>
       <div class="md:hidden">
@@ -37,18 +38,16 @@
       </div>
     </nav>
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
-      <a href="#presentacion" data-target="inicio"
-        class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Presentación</a>
       <a href="#inicio" data-target="inicio"
         class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Inicio</a>
+      <a href="#presentacion" data-target="presentacion"
+        class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Presentación</a>
       <a href="#problema" data-target="problema"
         class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">El Problema</a>
       <a href="#impacto" data-target="impacto"
         class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Impacto</a>
-      <a href="#soluciones" data-target="soluciones"
-        class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Soluciones</a>
-      <a href="#propuesta" data-target="propuesta"
-        class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Propuesta</a>
+      <a href="#metodo-ingeniero" data-target="impacto"
+        class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Método del Ingeniero</a>
       <a href="#fuentes" data-target="fuentes"
         class="block nav-link-mobile text-gray-600 hover:bg-gray-100 px-4 py-3">Fuentes</a>
     </div>
@@ -56,35 +55,70 @@
 
   <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-    <section id="inicio" class="h-screen w-full flex flex-col align-center justify-center text-center pb-20 scroll-mt-20">
-      <div class="w-full h-[85%] bg-green-900 flex flex-col align-center justify-center rounded-[2rem]">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-10">Acumulación de Residuos Tecnológicos</h1>
+    <section id="inicio"
+      class="h-screen w-full flex flex-col items-center justify-center text-center pb-20 scroll-mt-20">
+      <div class="w-full h-[85%] relative bg-green-900 flex flex-col items-center justify-center rounded-[2rem]">
+        <img class="absolute top-[-50px] left-[-50px] rotate-[0.1rad] h-32 animate-bounce"
+          src="./assets/electronics.svg" alt="electronic asset">
+        <img class="absolute top-[-50px] right-[-50px] h-40" src="./assets/ipod-electronics.svg" alt="electronic asset">
+        <h1 class="w-[70%] p-4 text-4xl md:text-5xl font-bold text-white mb-10 uppercase">Acumulación de Residuos
+          Tecnológicos</h1>
         <p class="text-lg md:text-2xl text-white max-w-3xl mx-auto">
           Un análisis de la problemática en hogares e instituciones educativas y una propuesta de solución desde la
           ingeniería.
         </p>
       </div>
     </section>
-    <section class="w-[100%] h-[30vh] bg-[url(assets/residuos-2.jpg)] bg-fixed rounded-[1rem]">
-    </section>
-    <section class="w-[100%] h-[30vh] bg-[url(assets/residuos-4.jpg)] bg-fixed mt-5 rounded-[1rem]">
+
+    <section class="flex flex-col justify-center align-center mb-20">
+      <section class="w-[100%] h-[25vh] object-cover bg-[url(assets/residuos-7.jpg)] bg-fixed rounded-[1rem]">
+      </section>
+      <section class="w-[100%] h-[25vh] object-cover bg-[url(assets/residuos-4.jpg)] bg-fixed mt-5 rounded-[1rem]">
+      </section>
+      <section class="w-[100%] h-[25vh] object-cover bg-[url(assets/residuos-5.jpg)] bg-fixed mt-5 rounded-[1rem]">
+      </section>
     </section>
 
-    <section id="presentación" class="h-screen flex flex-col align-center justify-center text-center pt-12 pb-20 scroll-mt-20">
-      <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto">
-        Trabajo final para la cátedra de Introducción </br> a la Ingeniería de Sistemas y Computación
-      </p>
-      <p class="pt-3 text-xl md:text-1xl text-slate-600 max-w-3xl mx-auto">
-        Grupo 02 Nocturno conformado por los estudiantes
-      </p>
-      <ul class="my-10">
-        <li class="mt-6 text-slate-600">Ángeles Rondón</li>
-        <li class="mt-2 text-slate-600">Breynner Henao</li>
-        <li class="mt-2 text-slate-600">Ruben Salas</li>
-        <li class="mt-2 text-slate-600">Sebastian Quinceno</li>
-      </ul>
-      <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10">Y hablaremos sobre</p>
-      <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">Acumulación de Residuos Tecnológicos </br> en hogares e instituciones educativas</h1>
+    <section id="presentacion"
+      class="mt-20 h-screen flex flex-col align-center justify-center text-center scroll-mt-20">
+      <div class="flex align-center justify-center text-center">
+        <div class="m-2 py-4 flex-1 flex items-center rounded-lg shadow-lg border-t-4 border-green-700">
+          <p class="text-xl p-4 md:text-2xl text-slate-600 max-w-3xl mx-auto">
+            Trabajo final para la cátedra de Introducción a la Ingeniería de Sistemas y Computación
+          </p>
+        </div>
+        <div class="m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+          <p class="pt-3 text-xl md:text-1xl text-slate-600 max-w-3xl mx-auto">
+            Grupo 02 Nocturno conformado por los estudiantes
+          </p>
+          <div class="w-full flex items-center justify-evenly mt-2">
+            <ul class="my-2 mx-2">
+              <li class="mt-2 text-slate-600 text-left">Ángeles Rondón</li>
+              <li class="mt-2 text-slate-600 text-left">Breynner Henao</li>
+            </ul>
+            <ul class="my-2 mx-2">
+              <li class="mt-2 text-slate-600 text-left">Ruben Salas</li>
+              <li class="mt-2 text-slate-600 text-left">Sebastian Quinceno</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto my-10">Y hablaremos sobre</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">
+          Acumulación de Residuos Tecnológicos
+          </br>
+          en hogares e instituciones educativas
+        </h1>
+      </div>
+    </section>
+
+    <section id="video-introduccion" class="scroll-mt-20 flex flex-col items-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-green-800 mb-10">Video de presentación</h2>
+      <iframe width="300" height="600" src="https://youtube.com/embed/ltYEBYiImjs?si=hGlGLlOoBrUy_DYt"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        class="rounded-lg" allowfullscreen></iframe>
     </section>
 
     <section id="problema" class="py-16 scroll-mt-20">
@@ -134,229 +168,372 @@
           <div class="text-4xl font-bold text-red-700">
             &lt; 20%
           </div>
-              <div class="text-slate-600 mt-2">es reciclado de manera formal y segura a nivel global.</div>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <div class="text-4xl font-bold text-gray-700">>80%</div>
-            <div class="text-slate-600 mt-2">termina en vertederos, incinerado o gestionado informalmente.</div>
-          </div>
+          <div class="text-slate-600 mt-2">es reciclado de manera formal y segura a nivel global.</div>
         </div>
-
-        <h3 class="text-2xl font-bold text-center mb-4 text-slate-800">Visualización: Gestión Global de RAEE</h3>
-        <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">
-          Este gráfico ilustra la desproporción entre los residuos generados y los que reciben un tratamiento adecuado.
-          La gran mayoría se pierde, contaminando o desperdiciándose.
-        </p>
-        <div class="donut-chart-container">
-          <canvas id="eWasteChart"></canvas>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-4xl font-bold text-gray-700">>80%</div>
+          <div class="text-slate-600 mt-2">termina en vertederos, incinerado o gestionado informalmente.</div>
         </div>
-    </section>
-
-
-    <section id="soluciones" class="py-16 scroll-mt-20">
-      <h2 class="text-3xl font-bold text-center mb-4 text-slate-900">Análisis de Soluciones Posibles</h2>
-      <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
-        Se analizaron múltiples enfoques para abordar el problema. Cada uno tiene sus propias ventajas y desventajas.
-        Haga clic en una solución para ver sus detalles.
-      </p>
-
-      <div id="solution-tabs" class="flex flex-wrap justify-center gap-3 md:gap-4 mb-6">
-        <button data-target="sol-1"
-          class="solution-btn text-sm md:text-base active px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">1.
-          Puntos Verdes Escolares</button>
-        <button data-target="sol-2"
-          class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">2.
-          Tecno-Reciclatón</button>
-        <button data-target="sol-3"
-          class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">3.
-          Reacondicionamiento</button>
-        <button data-target="sol-4"
-          class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">4.
-          App de Gamificación</button>
-        <button data-target="sol-5"
-          class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">5.
-          Módulos Educativos</button>
       </div>
 
-      <div id="solution-content" class="bg-white p-6 md:p-8 rounded-lg shadow-xl min-h-[300px]">
-
-        <div id="sol-default" class="solution-panel text-center text-slate-500 pt-16">
-          <p class="text-xl">Seleccione una solución para ver su análisis detallado.</p>
-        </div>
-
-        <div id="sol-1" class="solution-panel hidden">
-          <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 1: "Puntos Verdes" Escolares</h3>
-          <p class="text-slate-600 mb-6">Crear puntos de acopio fijos en instituciones educativas. La escuela sirve como
-            centro de acopio para su propio e-waste y el de los hogares de la comunidad (estudiantes y padres).</p>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
-              <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
-                <li>Centraliza la recolección.</li>
-                <li>Educa permanentemente a la comunidad.</li>
-                <li>Genera alianzas (empresa recicladora-escuela).</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
-              <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
-                <li>Requiere espacio físico de almacenamiento.</li>
-                <li>Necesita logística de recolección periódica.</li>
-                <li>Riesgo de acumulación si la logística falla.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="sol-2" class="solution-panel hidden">
-          <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 2: Campañas "Tecno-Reciclatón"</h3>
-          <p class="text-slate-600 mb-6">Jornadas de recolección masivas y puntuales (ej. una vez por semestre) en
-            alianza con un gestor autorizado de RAEE. Se puede combinar con incentivos.</p>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
-              <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
-                <li>Genera alta visibilidad y conciencia.</li>
-                <li>Recoge gran volumen de residuos en poco tiempo.</li>
-                <li>Es un evento educativo y mediático.</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
-              <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
-                <li>No es una solución permanente, es puntual.</li>
-                <li>Requiere mucha organización y marketing.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="sol-3" class="solution-panel hidden">
-          <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 3: Programas de Reacondicionamiento</h3>
-          <p class="text-slate-600 mb-6">Crear un "Taller-Lab" en las escuelas donde estudiantes (guiados por técnicos)
-            reparen y actualicen equipos que aún funcionan, fomentando la reutilización.</p>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
-              <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
-                <li>Fomenta la economía circular (reutilización).</li>
-                <li>Desarrolla habilidades técnicas (STEM).</li>
-                <li>Equipos reparados pueden donarse o reusarse.</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
-              <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
-                <li>Requiere inversión inicial (herramientas).</li>
-                <li>Necesita personal técnico capacitado.</li>
-                <li>No soluciona el problema de equipos irreparables.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="sol-4" class="solution-panel hidden">
-          <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 4: App de Gamificación y Logística</h3>
-          <p class="text-slate-600 mb-6">Una aplicación móvil donde los hogares registran sus RAEE y ganan "puntos
-            verdes" por entregarlos en la escuela. La app coordina la logística de recolección.</p>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
-              <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
-                <li>Altamente escalable y atractivo para jóvenes.</li>
-                <li>Usa la tecnología para educar e incentivar.</li>
-                <li>Genera datos y métricas en tiempo real.</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
-              <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
-                <li>Costo de desarrollo y mantenimiento de la app.</li>
-                <li>Requiere que los usuarios la adopten masivamente.</li>
-                <li>Posible brecha digital en algunos sectores.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="sol-5" class="solution-panel hidden">
-          <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 5: Módulos de Educación y Sensibilización</h3>
-          <p class="text-slate-600 mb-6">Crear un kit educativo digital para profesores sobre los RAEE, para que lo
-            integren en materias de ciencias, tecnología o ética. Ataca la raíz del problema.</p>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
-              <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
-                <li>Ataca la raíz del problema (desconocimiento).</li>
-                <li>Bajo costo de implementación y alta replicabilidad.</li>
-                <li>Genera un cambio cultural a largo plazo.</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
-              <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
-                <li>Resultados visibles solo a largo plazo.</li>
-                <li>No soluciona la acumulación física existente.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+      <h3 class="text-2xl font-bold text-center mb-4 text-slate-800">Visualización: Gestión Global de RAEE</h3>
+      <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">
+        Este gráfico ilustra la desproporción entre los residuos generados y los que reciben un tratamiento adecuado.
+        La gran mayoría se pierde, contaminando o desperdiciándose.
+      </p>
+      <div class="donut-chart-container">
+        <canvas id="eWasteChart"></canvas>
       </div>
     </section>
 
-    <section id="propuesta" class="py-16 scroll-mt-20 bg-green-50/50 rounded-lg shadow-xl px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-4 text-slate-900">Propuesta de Ingeniería: Sistema "CREA"</h2>
-      <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
-        La solución de ingeniería no es una idea única, sino un **sistema integrado** que combina las soluciones más
-        fuertes. Proponemos el "Centro de Revalorización RAEE Educativo (CREA)".
-      </p>
+    <section id="metodo-ingeniero" class="py-30 scroll-mt-20">
+      <h2 class="mb-10 text-3xl md:text-5xl font-bold text-green-800 text-center">Método del Ingeniero</h2>
 
-      <div class="grid md:grid-cols-3 gap-6 mt-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-3 text-green-800">1. Componente Educativo</h3>
-          <p class="text-slate-600">Creación de un "Kit CREA" digital (videos, guías) para sensibilizar a alumnos y
-            padres sobre el problema, cómo prevenirlo y cómo preparar equipos para el borrado seguro de datos.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-3 text-green-800">2. Componente de Recolección</h3>
-          <p class="text-slate-600">Instalación de una "Estación CREA" (Punto Verde fijo) en la escuela para residuos
-            pequeños, complementado con una "CREA-tón" anual (Reciclatón) para equipos grandes de los hogares.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-3 text-green-800">3. Componente de Valorización</h3>
-          <p class="text-slate-600">Un taller de triaje y reacondicionamiento. Lo funcional se repara y reutiliza
-            (dona). Lo irreparable se entrega a un gestor certificado para reciclaje, financiando el taller.</p>
-        </div>
-      </div>
-
-      <div class="mt-16">
-        <h3 class="text-2xl font-bold text-center mb-4 text-slate-800">Flujo del Sistema y Prototipado</h3>
-        <p class="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-          El sistema clasifica todo lo recolectado. La fase de prototipado mediría el éxito de este flujo en una escuela
-          piloto usando Indicadores Clave de Desempeño (KPIs).
-        </p>
-
-        <div
-          class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-center font-semibold text-slate-700 mb-12">
-          <div class="bg-white p-4 rounded-lg shadow-md">RAEE Recolectado<br />(Hogares + Escuela)</div>
-          <div class="text-2xl text-green-600 font-bold">→</div>
-          <div class="bg-white p-4 rounded-lg shadow-lg border-2 border-green-600">Triaje (Clasificación)</div>
-          <div class="text-2xl text-green-600 font-bold">→</div>
-          <div class="flex flex-col space-y-2">
-            <div class="bg-green-100 p-4 rounded-lg shadow-md border border-green-300">Reutilizable (Reparar y Donar)
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md border border-gray-300">Reciclable (Vender a Gestor)</div>
+      <div class="mb-10">
+        <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Identificatión del problema</h3>
+        <div class="flex relative">
+          <img src="./assets/garbage-2.svg" alt="Garbage asset" class="h-80 absolute right-[450px]">
+          <div class="w-[90%] flex flex-col">
+            <p
+              class="w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[0.04rad]">
+              Los residuos eléctricos y electrónicos son todos aquellos equipos que usamos en nuestro diaria
+              vivir actualmente y funcionan mediante corriente eléctrica o campos electromagnéticos y, que
+              realizan un sinnúmero de funciones determinadas.
+            </p>
+            <p
+              class="w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[-0.04rad]">
+              Así mismo, todos estos equipos se van modernizando con el tiempo y los que antes eran novedosos pasan a
+              ser totalmente obsoletos, olvidados y desechados, volviéndose así residuos.
+            </p>
+          </div>
+          <div class="w-[90%] flex flex-col">
+            <p
+              class="w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[-0.03rad]">
+              Este tipo de residuos están compuestos por elementos sumamente peligrosos, que al diluirse en el
+              aire afectan la capa de ozono e incrementan el calentamiento global, siendo esta una gran
+              amenaza para el ser humano.
+            </p>
+            <p
+              class="w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-7 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[0.02rad]">
+              Además, el simple hecho de la combinación de sustancias provenientes de esta basura afecta la salud del
+              ser humano, y esto debido a la mala gestión de dichos residuos.
+            </p>
           </div>
         </div>
-
-        <h4 class="text-xl font-bold text-center mb-4 text-slate-800">KPIs del Prototipo (Datos de Simulación)</h4>
-        <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">
-          Un piloto de 6 meses buscaría medir el impacto tangible. El gráfico simula los resultados esperados de la
-          implementación en una escuela.
+        <p class="text-white text-center max-w-2xl mx-auto mt-10 bg-zinc-950 p-5 rounded-lg">
+          Una vez identificado el problema, que información es necesaria para atacarlo?
         </p>
-        <div class="chart-container">
-          <canvas id="kpiChart"></canvas>
+      </div>
+      <img src="./assets/arrow-1.svg" alt="arrow down">
+      <div class="mt-10">
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Recolección de la información necesaria</h3>
+          <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">¿Como afecta este problema a las personas e
+            instituciones educativas?</p>
+        </div>
+        <div class="flex">
+          <div class="flex-1">
+            <p
+              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              Nuestra investigación se baso principalmente en como las personas manejan estos residuos en su día a día,
+              además de investigar como esta problematica afecta mundialmente. Encontramos que la mayoría de las
+              personas prefieren conservar telefonos defectuosos, computadores portátiles o de mesa, electrodomesticos,
+              etc., antes de desecharlos. Esto se debe a que no existen depositos de desechos electronicos donde
+              depositarlos, además de que muchas veces prefieren conservarlos antes de desecharlos.
+            </p>
+            <p
+              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              Otro aspecto importante a tener en cuenta es como muchas personas prefieren guardar muchos de estos
+              aparatos electronicos ya que piensan reparalos, pero en muchos casos los años pasan y no son reparados,
+              quedando olvidados en casa. Esto puede un factor de contaminación grave ya que al no ser almacenado en un
+              lugar adecuado puede conllevar a consecuencias en el medio ambiente.
+            </p>
+            <p
+              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              Al tener todo nuestro material recolectado empezamos con todas las ideas de como se puede atacar esta
+              problematica
+            </p>
+          </div>
+          <div class="grid flex-1 grid-rows-2 grid-cols-3 gap-2">
+            <img src="./assets/raee.jpeg" alt="Raee example" class="col-span-3">
+            <div class="h-60 col-span-3 flex">
+              <img src="./assets/raee-2.jpeg" alt="Laptops and raee" class="w-[240px] col-span-1 object-cover">
+              <img src="./assets/raee-1.jpeg" alt="Raee" class="w-[240px] mx-2 col-span-1 object-cover">
+              <img src="./assets/raee-3.jpeg" alt="Raee" class="w-[240px] col-span-1 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-16 scroll-mt-20 bg-white rounded-lg shadow-xl px-6 lg:px-8 py-16 scroll-mt-20">
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Búsqueda de soluciones creativas</h3>
+          <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">
+            ¿Como afecta este problema a las personas e instituciones educativas?
+          </p>
+        </div>
+        <div>
+          <p
+            class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
+            Muchas fueron las ideas que discutimos a la hora de proponer una solución a esta problematica. En nuestra
+            investigación encontramos que existen empresas que se encargan de recolectar estos residuos, lo cual debería
+            ser de mayor conocimiento para la población. Estas son algunas de ellas:
+          </p>
+        </div>
+        <div class="flex justify-evenly">
+          <ul class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+            <li>Tiendas ARA (Recolección de baterias)</li>
+            <li>Tiendas D1 (Recolección de baterias)</li>
+            <li>Solutek Informatica</li>
+          </ul>
+          <ul class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+            <li>
+              <a href="https://www.epa.gov.co/epa-manejo-de-residuos-tecnologicos-raee-residuos-de-aparatos-electricos-y-electronicos"
+                target="_blank" rel="noopener noreferrer">
+                Empresas Publicas de Armenia (EPA)
+              </a>
+            </li>
+            <li>
+              <a href="https://crq.gov.co/ideam/" target="_blank" rel="noopener noreferrer">
+                IDEAM
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
+            Nuestra propuesta es crear una empresa o entidad que se encargue de colocar puntos de recolección de
+            aparatos electricos y electronicos en diferentes lugares: escuelas, universidades, zonas peatonales, etc.,
+            para que esta este al alcance de todos y no sea difícil de encontrar.
+          </p>
+        </div>
+      </div>
+      <div class="py-16 scroll-mt-20">
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Pasar de la idea al diseño preliminar</h3>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
+            Parte del prototipo que diseñamos se basa en separar cada elemento entre si funciona o no. Una vez separado
+            cada desecho ya pasaríamos a clasificarlos y revisar que elementos estan en buen estado y que elementos si
+            son residuos que ya no pueden tener una segunda vida.
+          </p>
+          <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
+            Los elementos recuperados se venderían a fabricantes de tecnología y, se puede llevar a cabo en conjunto con el gobierno la producción de puntos de recolección inteligente, donde por el depósito de dispositivos electrónicos se pueda dar un bono o algún beneficio para motivar a las personas. Este es el prototipo que tenemos en mente:
+          </p>
+          <img src="./assets/raee-inteligente.jpeg" alt="Raee" class="w-[240px] col-span-1 object-cover rounded-lg">
+        </div>
+      </div>
+      <div class="py-16 scroll-mt-20">
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Evaluación, selección de la solución y Preparación de reportes, planos y especificaciones</h3>
+        </div>
+        <div>
+          <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
+            Se analizaron múltiples enfoques para abordar la idea anterior. Cada uno tiene sus propias ventajas y
+            desventajas.
+            Haga clic en una solución para ver sus detalles.
+          </p>
+
+          <div id="solution-tabs" class="flex flex-wrap justify-center gap-3 md:gap-4 mb-6">
+            <button data-target="sol-1"
+              class="solution-btn text-sm md:text-base active px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">1.
+              Puntos Verdes Escolares</button>
+            <button data-target="sol-2"
+              class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">2.
+              Tecno-Reciclatón</button>
+            <button data-target="sol-3"
+              class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">3.
+              Reacondicionamiento</button>
+            <button data-target="sol-4"
+              class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">4.
+              App de Gamificación</button>
+            <button data-target="sol-5"
+              class="solution-btn text-sm md:text-base px-4 py-2 font-semibold rounded-full shadow-sm bg-white border border-gray-300 hover:bg-gray-100 transition-all duration-200">5.
+              Módulos Educativos</button>
+          </div>
+
+          <div id="solution-content" class="bg-white p-6 md:p-8 rounded-lg shadow-xl min-h-[300px]">
+
+            <div id="sol-default" class="solution-panel text-center text-slate-500 pt-16">
+              <p class="text-xl">Seleccione una solución para ver su análisis detallado.</p>
+            </div>
+
+            <div id="sol-1" class="solution-panel hidden">
+              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 1: "Puntos Verdes" Escolares</h3>
+              <p class="text-slate-600 mb-6">Crear puntos de acopio fijos en instituciones educativas. La escuela sirve
+                como
+                centro de acopio para su propio e-waste y el de los hogares de la comunidad (estudiantes y padres).</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
+                  <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
+                    <li>Centraliza la recolección.</li>
+                    <li>Educa permanentemente a la comunidad.</li>
+                    <li>Genera alianzas (empresa recicladora-escuela).</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
+                  <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
+                    <li>Requiere espacio físico de almacenamiento.</li>
+                    <li>Necesita logística de recolección periódica.</li>
+                    <li>Riesgo de acumulación si la logística falla.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="sol-2" class="solution-panel hidden">
+              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 2: Campañas "Tecno-Reciclatón"</h3>
+              <p class="text-slate-600 mb-6">Jornadas de recolección masivas y puntuales (ej. una vez por semestre) en
+                alianza con un gestor autorizado de RAEE. Se puede combinar con incentivos.</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
+                  <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
+                    <li>Genera alta visibilidad y conciencia.</li>
+                    <li>Recoge gran volumen de residuos en poco tiempo.</li>
+                    <li>Es un evento educativo y mediático.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
+                  <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
+                    <li>No es una solución permanente, es puntual.</li>
+                    <li>Requiere mucha organización y marketing.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="sol-3" class="solution-panel hidden">
+              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 3: Programas de Reacondicionamiento</h3>
+              <p class="text-slate-600 mb-6">Crear un "Taller-Lab" en las escuelas donde estudiantes (guiados por
+                técnicos)
+                reparen y actualicen equipos que aún funcionan, fomentando la reutilización.</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
+                  <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
+                    <li>Fomenta la economía circular (reutilización).</li>
+                    <li>Desarrolla habilidades técnicas (STEM).</li>
+                    <li>Equipos reparados pueden donarse o reusarse.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
+                  <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
+                    <li>Requiere inversión inicial (herramientas).</li>
+                    <li>Necesita personal técnico capacitado.</li>
+                    <li>No soluciona el problema de equipos irreparables.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="sol-4" class="solution-panel hidden">
+              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 4: App de Gamificación y Logística</h3>
+              <p class="text-slate-600 mb-6">Una aplicación móvil donde los hogares registran sus RAEE y ganan "puntos
+                verdes" por entregarlos en la escuela. La app coordina la logística de recolección.</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
+                  <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
+                    <li>Altamente escalable y atractivo para jóvenes.</li>
+                    <li>Usa la tecnología para educar e incentivar.</li>
+                    <li>Genera datos y métricas en tiempo real.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
+                  <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
+                    <li>Costo de desarrollo y mantenimiento de la app.</li>
+                    <li>Requiere que los usuarios la adopten masivamente.</li>
+                    <li>Posible brecha digital en algunos sectores.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="sol-5" class="solution-panel hidden">
+              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 5: Módulos de Educación y Sensibilización</h3>
+              <p class="text-slate-600 mb-6">Crear un kit educativo digital para profesores sobre los RAEE, para que lo
+                integren en materias de ciencias, tecnología o ética. Ataca la raíz del problema.</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Ventajas</h4>
+                  <ul class="list-disc list-inside text-green-600 mt-2 space-y-1">
+                    <li>Ataca la raíz del problema (desconocimiento).</li>
+                    <li>Bajo costo de implementación y alta replicabilidad.</li>
+                    <li>Genera un cambio cultural a largo plazo.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-slate-800">Desventajas</h4>
+                  <ul class="list-disc list-inside text-red-600 mt-2 space-y-1">
+                    <li>Resultados visibles solo a largo plazo.</li>
+                    <li>No soluciona la acumulación física existente.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Implementación del diseño</h3>
+        </div>
+        <div class="py-16 scroll-mt-20 bg-green-50/50 rounded-lg shadow-xl px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-4 text-slate-900">Propuesta de Ingeniería: Sistema "CREA"</h2>
+          <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
+            La solución de ingeniería no es una idea única, sino un **sistema integrado** que combina las soluciones más
+            fuertes. Proponemos el "Centro de Revalorización RAEE Educativo (CREA)".
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-green-800">1. Componente Educativo</h3>
+              <p class="text-slate-600">Creación de un "Kit CREA" digital (videos, guías) para sensibilizar a alumnos y
+                padres sobre el problema, cómo prevenirlo y cómo preparar equipos para el borrado seguro de datos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-green-800">2. Componente de Recolección</h3>
+              <p class="text-slate-600">Instalación de una "Estación CREA" (Punto Verde fijo) en la escuela para
+                residuos
+                pequeños, complementado con una "CREA-tón" anual (Reciclatón) para equipos grandes de los hogares.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3 text-green-800">3. Componente de Valorización</h3>
+              <p class="text-slate-600">Un taller de triaje y reacondicionamiento. Lo funcional se repara y reutiliza
+                (dona). Lo irreparable se entrega a un gestor certificado para reciclaje, financiando el taller.</p>
+            </div>
+          </div>
+
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-center mb-4 text-slate-800">Flujo del Sistema y Prototipado</h3>
+            <p class="text-slate-600 text-center max-w-3xl mx-auto mb-8">
+              El sistema clasifica todo lo recolectado. La fase de prototipado mediría el éxito de este flujo en una
+              escuela
+              piloto usando Indicadores Clave de Desempeño (KPIs).
+            </p>
+
+            <div
+              class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-center font-semibold text-slate-700 mb-12">
+              <div class="bg-white p-4 rounded-lg shadow-md">RAEE Recolectado<br />(Hogares + Escuela)</div>
+              <div class="text-2xl text-green-600 font-bold">→</div>
+              <div class="bg-white p-4 rounded-lg shadow-lg border-2 border-green-600">Triaje (Clasificación)</div>
+              <div class="text-2xl text-green-600 font-bold">→</div>
+              <div class="flex flex-col space-y-2">
+                <div class="bg-green-100 p-4 rounded-lg shadow-md border border-green-300">Reutilizable (Reparar y
+                  Donar)
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md border border-gray-300">Reciclable (Vender a Gestor)
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -379,10 +556,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="text-center py-8 bg-gray-200 text-gray-600">
-    <p>Aplicación de análisis interactivo basada en el informe "Análisis de Problema y Soluciones: Acumulación de
-      Residuos Tecnológicos".</p>
-  </footer>
 </body>
+
 </html>

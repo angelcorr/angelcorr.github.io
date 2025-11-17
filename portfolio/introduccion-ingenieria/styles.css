@@ -1,69 +1,67 @@
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
-.chart-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  max-height: 350px;
-}
-
-.donut-chart-container {
-  position: relative;
-  width: 100%;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 280px;
-  max-height: 300px;
-}
-
-@media (min-width: 768px) {
-  .chart-container {
-    height: 350px;
-    max-height: 400px;
+@layer components {
+  body {
+    font-family: 'Inter', sans-serif;
   }
-
-  .donut-chart-container {
+  
+  .chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     height: 300px;
     max-height: 350px;
   }
-}
-
-.active-nav {
-  font-weight: 600;
-  color: #15803d;
-  border-bottom: 2px solid #15803d;
-}
-
-.solution-btn.active {
-  background-color: #16a34a;
-  color: white;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  transform: translateY(-2px);
-}
-
-.solution-panel {
-  transition: opacity 0.3s ease-in-out;
-}
-
-.parallax {
-  width: 100vw!;
-  height: 100vh!;
-  display: flex!;
-}
-
-.parallax img {
-  max-width: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  flex-grow: 1;
-  height: 100%;
-  width: 20%;
+  
+  .donut-chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 280px;
+    max-height: 300px;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-container {
+      height: 350px;
+      max-height: 400px;
+    }
+  
+    .donut-chart-container {
+      height: 300px;
+      max-height: 350px;
+    }
+  }
+  
+  .active-nav {
+    font-weight: 600;
+    color: #15803d;
+    border-bottom: 2px solid #15803d;
+  }
+  
+  .solution-btn.active {
+    background-color: #16a34a;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .solution-panel {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .climate-crisis {
+    font-family: "Climate Crisis", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-variation-settings:
+      "YEAR" 1979;
+  }
 }
