@@ -58,12 +58,15 @@
     <section id="inicio"
       class="h-screen w-full flex flex-col items-center justify-center text-center pb-20 scroll-mt-20">
       <div class="w-full h-[85%] relative bg-green-900 flex flex-col items-center justify-center rounded-[2rem]">
-        <img class="absolute top-[-50px] left-[-50px] rotate-[0.1rad] h-32 animate-bounce"
+        <img
+          class="h-20 md:h-24 xl:h-32 absolute top-[-20px] md:top-[-30px] xl:top-[-50px] left-[-10px] md:left-[-20px] xxl:left-[-50px] rotate-[0.1rad] animate-bounce"
           src="./assets/electronics.svg" alt="electronic asset">
-        <img class="absolute top-[-50px] right-[-50px] h-40" src="./assets/ipod-electronics.svg" alt="electronic asset">
-        <h1 class="w-[70%] p-4 text-4xl md:text-5xl font-bold text-white mb-10 uppercase">Acumulación de Residuos
-          Tecnológicos</h1>
-        <p class="text-lg md:text-2xl text-white max-w-3xl mx-auto">
+        <img class="h-20 md:h-30 xl:h-40 absolute top-[-40px] md:top-[-50px] right-[-20px] md:right-[-50px]"
+          src="./assets/ipod-electronics.svg" alt="electronic asset">
+        <h1 class="xl:w-[70%] p-4 text-2xl md:text-3xl md:text-4xl font-bold text-white mb-10 uppercase">
+          Acumulación de <br class="xl:hidden"> Residuos Tecnológicos
+        </h1>
+        <p class="p-3 md:p-0 text-lg md:text-2xl text-white max-w-3xl mx-auto">
           Un análisis de la problemática en hogares e instituciones educativas y una propuesta de solución desde la
           ingeniería.
         </p>
@@ -81,15 +84,17 @@
 
     <section id="presentacion"
       class="mt-20 h-screen flex flex-col align-center justify-center text-center scroll-mt-20">
-      <div class="flex align-center justify-center text-center">
+      <div class="flex flex-col md:flex-row justify-center text-center">
         <div class="m-2 py-4 flex-1 flex items-center rounded-lg shadow-lg border-t-4 border-green-700">
-          <p class="text-xl p-4 md:text-2xl text-slate-600 max-w-3xl mx-auto">
+          <p class="md:text-xl p-4 xl:text-2xl text-slate-600 max-w-3xl mx-auto">
             Trabajo final para la cátedra de Introducción a la Ingeniería de Sistemas y Computación
           </p>
         </div>
         <div class="m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
-          <p class="pt-3 text-xl md:text-1xl text-slate-600 max-w-3xl mx-auto">
-            Grupo 02 Nocturno conformado por los estudiantes
+          <p class="pt-3 text-lg xl:text-2xl text-slate-600 max-w-3xl mx-auto">
+            Grupo 02 Nocturno conformado
+            <br class="xl:hidden">
+            por los estudiantes:
           </p>
           <div class="w-full flex items-center justify-evenly mt-2">
             <ul class="my-2 mx-2">
@@ -105,7 +110,7 @@
       </div>
       <div>
         <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto my-10">Y hablaremos sobre</p>
-        <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">
+        <h1 class="text-xl md:text-4xl xl:text-5xl font-bold text-green-800 mb-4">
           Acumulación de Residuos Tecnológicos
           </br>
           en hogares e instituciones educativas
@@ -114,7 +119,7 @@
     </section>
 
     <section id="video-introduccion" class="scroll-mt-20 flex flex-col items-center">
-      <h2 class="text-3xl md:text-5xl font-bold text-green-800 mb-10">Video de presentación</h2>
+      <h2 class="md:text-4xl xl:text-5xl font-bold text-green-800 mb-10">Video de presentación</h2>
       <iframe width="300" height="600" src="https://youtube.com/embed/ltYEBYiImjs?si=hGlGLlOoBrUy_DYt"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -191,50 +196,54 @@
 
       <div class="mb-10">
         <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Identificatión del problema</h3>
-        <div class="flex relative">
-          <img src="./assets/garbage-2.svg" alt="Garbage asset" class="h-80 absolute right-[450px]">
+        <div class="flex flex-col items-center md:flex-row relative">
+          <img src="./assets/garbage-2.svg" alt="Garbage asset"
+            class="hidden md:block lg:h-60 xl:h-70 xxl:h-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="w-[90%] flex flex-col">
             <p
-              class="w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[0.04rad]">
+              class="w-[100%] md:w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 md:rotate-[0.04rad]">
               Los residuos eléctricos y electrónicos son todos aquellos equipos que usamos en nuestro diaria
               vivir actualmente y funcionan mediante corriente eléctrica o campos electromagnéticos y, que
               realizan un sinnúmero de funciones determinadas.
             </p>
             <p
-              class="w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[-0.04rad]">
+              class="w-[100%] md:w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 md:rotate-[-0.04rad]">
               Así mismo, todos estos equipos se van modernizando con el tiempo y los que antes eran novedosos pasan a
               ser totalmente obsoletos, olvidados y desechados, volviéndose así residuos.
             </p>
           </div>
+          <img src="./assets/garbage-2.svg" alt="Garbage asset" class="md:hidden h-60">
           <div class="w-[90%] flex flex-col">
             <p
-              class="w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[-0.03rad]">
+              class="w-[100%] md:w-[62%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 md:rotate-[-0.03rad]">
               Este tipo de residuos están compuestos por elementos sumamente peligrosos, que al diluirse en el
               aire afectan la capa de ozono e incrementan el calentamiento global, siendo esta una gran
               amenaza para el ser humano.
             </p>
             <p
-              class="w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-7 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 rotate-[0.02rad]">
+              class="w-[100%] md:w-[62%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-7 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700 md:rotate-[0.02rad]">
               Además, el simple hecho de la combinación de sustancias provenientes de esta basura afecta la salud del
               ser humano, y esto debido a la mala gestión de dichos residuos.
             </p>
           </div>
         </div>
         <p class="text-white text-center max-w-2xl mx-auto mt-10 bg-zinc-950 p-5 rounded-lg">
-          Una vez identificado el problema, que información es necesaria para atacarlo?
+          Una vez identificado el problema, ¿que información es necesaria para atacarlo?
         </p>
       </div>
+
       <img src="./assets/arrow-1.svg" alt="arrow down">
+
       <div class="mt-10">
         <div>
           <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Recolección de la información necesaria</h3>
           <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">¿Como afecta este problema a las personas e
             instituciones educativas?</p>
         </div>
-        <div class="flex">
+        <div class="hidden lg:flex">
           <div class="flex-1">
             <p
-              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              class="w-[60%] mx-3 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
               Nuestra investigación se baso principalmente en como las personas manejan estos residuos en su día a día,
               además de investigar como esta problematica afecta mundialmente. Encontramos que la mayoría de las
               personas prefieren conservar telefonos defectuosos, computadores portátiles o de mesa, electrodomesticos,
@@ -242,45 +251,65 @@
               depositarlos, además de que muchas veces prefieren conservarlos antes de desecharlos.
             </p>
             <p
-              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              class="w-[60%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              Otro aspecto importante a tener en cuenta es como muchas personas prefieren guardar muchos de estos
+              aparatos electronicos ya que piensan reparalos, pero en muchos casos los años pasan y no son reparados,
+              quedando olvidados en casa. Esto puede un factor de contaminación grave ya que al no ser almacenado en un
+              lugar adecuado puede conllevar a consecuencias en el medio ambiente.
+              Al tener todo nuestro material recolectado empezamos con todas las ideas de como se puede atacar esta
+              problematica
+            </p>
+          </div>
+          <div class="grid flex-1 md:grid-rows-[1fr_180px_1fr] xl:grid-rows-[1fr_215px_1fr] grid-cols-2 gap-2">
+            <img src="./assets/raee.jpeg" alt="Raee example" class="col-span-2">
+            <img src="./assets/raee-2.jpeg" alt="Laptops and raee" class="col-span-1 object-cover">
+            <img src="./assets/raee-1.jpeg" alt="Raee" class="col-span-1 object-cover">
+            <img src="./assets/raee-3.jpeg" alt="Raee" class="col-span-2">
+          </div>
+        </div>
+        <div class="flex flex-col md:hidden">
+          <div class="flex-1">
+            <p
+              class="w-[90%] mx-3 mt-5 p-5 text-slate-600 text-center max-w-2xl mx-auto mb-6 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              Nuestra investigación se baso principalmente en como las personas manejan estos residuos en su día a día,
+              además de investigar como esta problematica afecta mundialmente. Encontramos que la mayoría de las
+              personas prefieren conservar telefonos defectuosos, computadores portátiles o de mesa, electrodomesticos,
+              etc., antes de desecharlos. Esto se debe a que no existen depositos de desechos electronicos donde
+              depositarlos, además de que muchas veces prefieren conservarlos antes de desecharlos.
+            </p>
+            <p
+              class="w-[90%] mx-3 mt-10 p-5 text-slate-600 text-center max-w-2xl mx-auto mb-6 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
               Otro aspecto importante a tener en cuenta es como muchas personas prefieren guardar muchos de estos
               aparatos electronicos ya que piensan reparalos, pero en muchos casos los años pasan y no son reparados,
               quedando olvidados en casa. Esto puede un factor de contaminación grave ya que al no ser almacenado en un
               lugar adecuado puede conllevar a consecuencias en el medio ambiente.
             </p>
             <p
-              class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
+              class="w-[90%] mx-3 mt-10 p-5 text-slate-600 text-center max-w-2xl mx-auto mb-6 flex-1 flex flex-col items-center rounded-lg shadow-lg border-t-4 border-green-700">
               Al tener todo nuestro material recolectado empezamos con todas las ideas de como se puede atacar esta
               problematica
             </p>
           </div>
-          <div class="grid flex-1 grid-rows-2 grid-cols-3 gap-2">
-            <img src="./assets/raee.jpeg" alt="Raee example" class="col-span-3">
-            <div class="h-60 col-span-3 flex">
-              <img src="./assets/raee-2.jpeg" alt="Laptops and raee" class="w-[240px] col-span-1 object-cover">
-              <img src="./assets/raee-1.jpeg" alt="Raee" class="w-[240px] mx-2 col-span-1 object-cover">
-              <img src="./assets/raee-3.jpeg" alt="Raee" class="w-[240px] col-span-1 object-cover">
-            </div>
+          <div class="grid flex-1 grid-rows-[1fr_100px_1fr] grid-cols-2 gap-2">
+            <img src="./assets/raee.jpeg" alt="Raee example" class="col-span-2">
+            <img src="./assets/raee-2.jpeg" alt="Laptops and raee" class="col-span-1 object-cover">
+            <img src="./assets/raee-1.jpeg" alt="Raee" class="col-span-1 object-cover">
+            <img src="./assets/raee-3.jpeg" alt="Raee" class="col-span-2">
           </div>
         </div>
       </div>
       <div class="py-16 scroll-mt-20 bg-white rounded-lg shadow-xl px-6 lg:px-8 py-16 scroll-mt-20">
-        <div>
-          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Búsqueda de soluciones creativas</h3>
-          <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">
-            ¿Como afecta este problema a las personas e instituciones educativas?
-          </p>
-        </div>
+        <h3 class="text-2xl font-bold text-center text-slate-900">Búsqueda de soluciones creativas</h3>
         <div>
           <p
-            class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
+            class="w-[100%] md:w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
             Muchas fueron las ideas que discutimos a la hora de proponer una solución a esta problematica. En nuestra
             investigación encontramos que existen empresas que se encargan de recolectar estos residuos, lo cual debería
             ser de mayor conocimiento para la población. Estas son algunas de ellas:
           </p>
         </div>
-        <div class="flex justify-evenly">
-          <ul class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+        <div class="flex flex-col md:flex-row md:justify-evenly">
+          <ul class="bg-white my-5 md:my-0 p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
             <li>Tiendas ARA (Recolección de baterias)</li>
             <li>Tiendas D1 (Recolección de baterias)</li>
             <li>Solutek Informatica</li>
@@ -288,12 +317,12 @@
           <ul class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
             <li>
               <a href="https://www.epa.gov.co/epa-manejo-de-residuos-tecnologicos-raee-residuos-de-aparatos-electricos-y-electronicos"
-                target="_blank" rel="noopener noreferrer">
+                target="_blank" rel="noopener noreferrer" class="underline">
                 Empresas Publicas de Armenia (EPA)
               </a>
             </li>
             <li>
-              <a href="https://crq.gov.co/ideam/" target="_blank" rel="noopener noreferrer">
+              <a href="https://crq.gov.co/ideam/" target="_blank" rel="noopener noreferrer" class="underline">
                 IDEAM
               </a>
             </li>
@@ -301,7 +330,7 @@
         </div>
         <div>
           <p
-            class="w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
+            class="w-[100%] md:w-[50%] mx-3 mt-10 p-10 text-slate-600 text-center max-w-2xl mx-auto mb-6 m-2 py-4 flex-1 flex flex-col items-center">
             Nuestra propuesta es crear una empresa o entidad que se encargue de colocar puntos de recolección de
             aparatos electricos y electronicos en diferentes lugares: escuelas, universidades, zonas peatonales, etc.,
             para que esta este al alcance de todos y no sea difícil de encontrar.
@@ -319,14 +348,18 @@
             son residuos que ya no pueden tener una segunda vida.
           </p>
           <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
-            Los elementos recuperados se venderían a fabricantes de tecnología y, se puede llevar a cabo en conjunto con el gobierno la producción de puntos de recolección inteligente, donde por el depósito de dispositivos electrónicos se pueda dar un bono o algún beneficio para motivar a las personas. Este es el prototipo que tenemos en mente:
+            Los elementos recuperados se venderían a fabricantes de tecnología y, se puede llevar a cabo en conjunto con
+            el gobierno la producción de puntos de recolección inteligente, donde por el depósito de dispositivos
+            electrónicos se pueda dar un bono o algún beneficio para motivar a las personas. Este es el prototipo que
+            tenemos en mente (Imagen generada con IA para fines académicos):
           </p>
           <img src="./assets/raee-inteligente.jpeg" alt="Raee" class="w-[240px] col-span-1 object-cover rounded-lg">
         </div>
       </div>
       <div class="py-16 scroll-mt-20">
         <div>
-          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Evaluación, selección de la solución y Preparación de reportes, planos y especificaciones</h3>
+          <h3 class="text-2xl font-bold text-center mb-4 text-slate-900">Evaluación, selección de la solución y
+            Preparación de reportes, planos y especificaciones</h3>
         </div>
         <div>
           <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
@@ -360,8 +393,10 @@
             </div>
 
             <div id="sol-1" class="solution-panel hidden">
-              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 1: "Puntos Verdes" Escolares</h3>
-              <p class="text-slate-600 mb-6">Crear puntos de acopio fijos en instituciones educativas. La escuela sirve
+              <h3 class="text-2xl text-center md:text-left font-bold mb-4 text-green-700">Solución 1: "Puntos Verdes"
+                Escolares</h3>
+              <p class="text-slate-600 text-center md:text-left mb-6">Crear puntos de acopio fijos en instituciones
+                educativas. La escuela sirve
                 como
                 centro de acopio para su propio e-waste y el de los hogares de la comunidad (estudiantes y padres).</p>
               <div class="grid md:grid-cols-2 gap-6">
@@ -385,8 +420,10 @@
             </div>
 
             <div id="sol-2" class="solution-panel hidden">
-              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 2: Campañas "Tecno-Reciclatón"</h3>
-              <p class="text-slate-600 mb-6">Jornadas de recolección masivas y puntuales (ej. una vez por semestre) en
+              <h3 class="text-2xl text-center md:text-left font-bold mb-4 text-green-700">Solución 2: Campañas
+                "Tecno-Reciclatón"</h3>
+              <p class="text-slate-600 text-center md:text-left mb-6">Jornadas de recolección masivas y puntuales (ej.
+                una vez por semestre) en
                 alianza con un gestor autorizado de RAEE. Se puede combinar con incentivos.</p>
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
@@ -408,8 +445,10 @@
             </div>
 
             <div id="sol-3" class="solution-panel hidden">
-              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 3: Programas de Reacondicionamiento</h3>
-              <p class="text-slate-600 mb-6">Crear un "Taller-Lab" en las escuelas donde estudiantes (guiados por
+              <h3 class="text-2xl text-center md:text-left font-bold mb-4 text-green-700">Solución 3: Programas de
+                Reacondicionamiento</h3>
+              <p class="text-slate-600 text-center md:text-left mb-6">Crear un "Taller-Lab" en las escuelas donde
+                estudiantes (guiados por
                 técnicos)
                 reparen y actualicen equipos que aún funcionan, fomentando la reutilización.</p>
               <div class="grid md:grid-cols-2 gap-6">
@@ -433,8 +472,10 @@
             </div>
 
             <div id="sol-4" class="solution-panel hidden">
-              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 4: App de Gamificación y Logística</h3>
-              <p class="text-slate-600 mb-6">Una aplicación móvil donde los hogares registran sus RAEE y ganan "puntos
+              <h3 class="text-2xl text-center md:text-left font-bold mb-4 text-green-700">Solución 4: App de
+                Gamificación y Logística</h3>
+              <p class="text-slate-600 text-center md:text-left mb-6">Una aplicación móvil donde los hogares registran
+                sus RAEE y ganan "puntos
                 verdes" por entregarlos en la escuela. La app coordina la logística de recolección.</p>
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
@@ -457,8 +498,10 @@
             </div>
 
             <div id="sol-5" class="solution-panel hidden">
-              <h3 class="text-2xl font-bold mb-4 text-green-700">Solución 5: Módulos de Educación y Sensibilización</h3>
-              <p class="text-slate-600 mb-6">Crear un kit educativo digital para profesores sobre los RAEE, para que lo
+              <h3 class="text-2xl text-center md:text-left font-bold mb-4 text-green-700">Solución 5: Módulos de
+                Educación y Sensibilización</h3>
+              <p class="text-slate-600 text-center md:text-left mb-6">Crear un kit educativo digital para profesores
+                sobre los RAEE, para que lo
                 integren en materias de ciencias, tecnología o ética. Ataca la raíz del problema.</p>
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
@@ -494,19 +537,24 @@
 
           <div class="grid md:grid-cols-3 gap-6 mt-8">
             <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-bold mb-3 text-green-800">1. Componente Educativo</h3>
-              <p class="text-slate-600">Creación de un "Kit CREA" digital (videos, guías) para sensibilizar a alumnos y
+              <h3 class="text-xl text-center md:text-left font-bold mb-3 text-green-800">1. Componente Educativo</h3>
+              <p class="text-slate-600 text-center md:text-left">Creación de un "Kit CREA" digital (videos, guías) para
+                sensibilizar a alumnos y
                 padres sobre el problema, cómo prevenirlo y cómo preparar equipos para el borrado seguro de datos.</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-bold mb-3 text-green-800">2. Componente de Recolección</h3>
-              <p class="text-slate-600">Instalación de una "Estación CREA" (Punto Verde fijo) en la escuela para
+              <h3 class="text-xl text-center md:text-left font-bold mb-3 text-green-800">2. Componente de Recolección
+              </h3>
+              <p class="text-slate-600 text-center md:text-left">Instalación de una "Estación CREA" (Punto Verde fijo)
+                en la escuela para
                 residuos
                 pequeños, complementado con una "CREA-tón" anual (Reciclatón) para equipos grandes de los hogares.</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-bold mb-3 text-green-800">3. Componente de Valorización</h3>
-              <p class="text-slate-600">Un taller de triaje y reacondicionamiento. Lo funcional se repara y reutiliza
+              <h3 class="text-xl text-center md:text-left font-bold mb-3 text-green-800">3. Componente de Valorización
+              </h3>
+              <p class="text-slate-600 text-center md:text-left">Un taller de triaje y reacondicionamiento. Lo funcional
+                se repara y reutiliza
                 (dona). Lo irreparable se entrega a un gestor certificado para reciclaje, financiando el taller.</p>
             </div>
           </div>
@@ -545,13 +593,88 @@
         tecnológico.
       </p>
       <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <ul class="list-disc list-inside text-slate-700 space-y-3">
-          <li><b>ONU (UNITAR y UIT):</b> Publicación del "Global E-waste Monitor".</li>
-          <li><b>Organización Mundial de la Salud (OMS):</b> Reportes sobre el impacto de los RAEE en la salud.</li>
-          <li><b>Greenpeace:</b> Informes sobre "basura electrónica" y obsolescencia programada.</li>
-          <li><b>Solving the E-waste Problem (StEP) Initiative:</b> Red global de expertos en el tema.</li>
-          <li><b>Google Scholar, SciELO y Redalyc:</b> Para estudios académicos y locales.</li>
-          <li><b>Ministerios de Ambiente locales:</b> Programas de "Posconsumo" y listado de gestores autorizados.</li>
+        <ul>
+          <li>
+            <a href="https://herramientas.datos.gov.co/sites/default/files/2021-12/programa%20raee%20informe.pdf">
+              <b>PROGRAMA RAEE: </b> - Herramientas (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.greenpeace.org/argentina/el-peligro-de-los-residuos-electronicos/">
+              <b>Fundación Greenpeace Argentina:</b> El peligro de los residuos (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.semanticscholar.org/paper/Protecci%C3%B3n-al-consumidor-en-Colombia-ante-la-Salom%C3%B3n-Fernanda/aa44b87bd8a4cb26f7ac2865f2c4066dea9fb5fd">
+              <b>Protección al consumidor en Colombia ante la obsolescencia</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itsitio.com/co/seguridad/como-proteger-y-desechar-dispositivos-electronicos-con-seguridad/">
+              <b>Cómo proteger y desechar dispositivos electrónicos con seguridad</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=74622">
+              <b>Decreto 284 de 2018 Nivel Nacional</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.eltiempo.com/salud/que-es-la-basura-electronica-y-cuales-son-sus-riesgos-para-la-salud-162986">
+              <b>¿Qué es la basura electrónica y cuáles son sus riesgos para la salud?</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://quimicos.minambiente.gov.co/wp-content/uploads/2024/06/Informe-evaluacion-primer-quinquenio-politica-RAEE-2023-VF-1.pdf">
+              <b>Gestión Sustancias Químicas</b> Presentación de PowerPoint (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53825">
+              <b>Ley 1672 de 2013 - Gestor Normativo - Función Pública</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.andi.com.co/Home/Noticia/17518-a-traves-de-los-siete-programas-creados">
+              <b>Noticias - ANDI</b> (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mineducacion.gov.co/1621/article-87226.html">
+              <b>Ministerio de Educación Nacional</b> Computadores para educar (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.mintic.gov.co/portal/inicio/Atencion-y-Servicio-a-la-Ciudadania/Preguntas-frecuentes/5233:Computadores-para-Educar">
+              <b>MinTIC</b> Computadores para Educar (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.epa.gov.co/epa-manejo-de-residuos-tecnologicos-raee-residuos-de-aparatos-electricos-y-electronicos">
+              <b>EPA</b> - Manejo de Residuos Tecnológicos RAEE (fecha de acceso: noviembre 8, 2025)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.who.int/es/news-room/fact-sheets/detail/electronic-waste-(e-waste)" target="_blank" rel="noopener noreferrer">
+              <b>Organización Mundial de la Salud (OMS):</b> Reportes sobre el impacto de los RAEE en la salud.
+            </a>
+          </li>
+          <li>
+            <a href="https://unitar.org/about/news-stories/press/global-e-waste-monitor-2024-electronic-waste-rising-five-times-faster-documented-e-waste-recycling" target="_blank" rel="noopener noreferrer">
+              <b>ONU (UNITAR y UIT):</b> Publicación del "Global E-waste Monitor".
+            </a>
+          </li>
+          <li>
+            <a href="https://www.residuoselectronicos.net/wp-content/uploads/2011/04/110309_StEP_Boeni.pdf" target="_blank" rel="noopener noreferrer">
+              <b>Solving the E-waste Problem (StEP) Initiative::</b> Red global de expertos en el tema.
+            </a>
+          </li>
         </ul>
       </div>
     </section>
