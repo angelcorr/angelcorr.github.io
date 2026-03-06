@@ -6,12 +6,14 @@ public class Trainer {
   private String name;
   private String lastName;
   private String id;
+  private String phoneNumber;
   private List<GroupClass> groupClass;
 
-  public Trainer(String name, String lastName, String id, List<GroupClass> groupClass) {
+  public Trainer(String name, String lastName, String id, String phoneNumber, List<GroupClass> groupClass) {
     this.name = name;
     this.lastName = lastName;
     this.id = id;
+    this.phoneNumber = phoneNumber;
     this.groupClass = groupClass;
   }
 
@@ -25,6 +27,10 @@ public class Trainer {
 
   public String getId() {
     return id;
+  }
+
+  public String getPhoneNumber() {
+    return phoneNumber;
   }
 
   public List<GroupClass> getGroupClass() {
@@ -41,6 +47,10 @@ public class Trainer {
 
   public void setId(String id) {
     this.id = id;
+  }
+
+  public void setPhoneNumber(String id) {
+    this.phoneNumber = phoneNumber;
   }
 
   public void setGroupClass(List<GroupClass> groupClass) {
